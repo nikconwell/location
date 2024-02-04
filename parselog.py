@@ -67,7 +67,7 @@ for page in reader.pages:
         # Just dumping entire file to text? Print and shortcut here.
         if (args.justdump):
             print(line)
-            next
+            continue
         # Are we in a new section???
         # 24-22           2331 MOTOR VEHICLE STOP Citation/ Warning Issued
         # YY-DD           HHMM REASON
@@ -85,12 +85,12 @@ for page in reader.pages:
             if (match):
                 print(line)
                 extract_location(match.group(1))
-                next
+                continue
             match = re.search('Vicinity of: (.*)', line)
             if (match):
                 print(line)
                 extract_location(match.group(1))
-                next
+                continue
             
     print("==========================================================")
     
