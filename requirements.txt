@@ -1,0 +1,2 @@
+geopy
+PyPDF2
