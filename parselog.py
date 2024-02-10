@@ -10,7 +10,9 @@ import re
 
 
 #
-# Parse the vague address information to get a more exact address
+# Given an address line, parse out the vague information to focus on the street
+# Returns:
+# The street line as string
 #
 def extract_location(addressline):
     regexes = ['(\d+[\w ]+\s+ST)',
@@ -25,12 +27,11 @@ def extract_location(addressline):
             parsed = match.group(1)
             break
     if (parsed):
-        print(f'parsed = {parsed}')
+        if args.debug: print(f'parsed = {parsed}')
+        return parsed
     else:
-        print("ERROR, NOT ABLE TO PARSE ADDRESS")
+        print(f"ERROR, NOT ABLE TO PARSE ADDRESS {addressline}")
     
-
-
 
 
 #
@@ -45,20 +46,23 @@ argParser.add_argument('--justdump', dest='justdump', default=False, action='sto
 
 args = argParser.parse_args()
 
-print(f"You passed a filename >>>{args.input}<<<")
+if (args.debug): 
+    print(f"You passed a filename >>>{args.input}<<<")
 
 reader = PdfReader(args.input)
-print(f"PDF has {len(reader.pages)} pages")
+if args.debug:
+    print(f"PDF has {len(reader.pages)} pages")
 
 
 interesting = False         # Will set to True when we want to focus on an interesting "paragraph" of the text. Could span 2 pages...
-
-
+date = None
+time = None
 #
 # Iterate pages in the PDF
 #
 for page in reader.pages:
-    print("Processing page")
+    if args.debug:
+        print("Processing page")
     text = page.extract_text()
     #
     # Iterate through each line of this page.
@@ -68,29 +72,32 @@ for page in reader.pages:
         if (args.justdump):
             print(line)
             continue
+        #
+        # Line indicating what date we are working on?
+        #                                   MM/DD/YYYY
+        if (match := re.search('^\s*For Date:\s*(\d+/\d+/\d+)', line)):
+            date = match.group(1)
+
         # Are we in a new section???
         # 24-22           2331 MOTOR VEHICLE STOP Citation/ Warning Issued
-        # YY-DD           HHMM REASON
-        match = re.search('^(\d+)-(\d+)\s+(\d+)\s+(.*)', line)
-        if (match):
-            # Do we have an interesting section for motor vehicle stop?
+        # YY-COUNT        HHMM REASON
+        if (match := re.search('^(\d+)-(\d+)\s+(\d+)\s+(.*)', line)):
+            # Do we have an interesting REASON for motor vehicle stop?
             if re.search('MOTOR VEHICLE STOP',match.group(4)):
                 interesting = True
-                print(line)
+                time = match.group(3)
+                if args.debug:
+                    print(line)
             else:
                 interesting = False
 
         if (interesting):
-            match = re.search('Location/Address: (.*)', line)
-            if (match):
-                print(line)
-                extract_location(match.group(1))
-                continue
-            match = re.search('Vicinity of: (.*)', line)
-            if (match):
-                print(line)
-                extract_location(match.group(1))
+            if ((match := re.search('Location/Address: (.*)', line)) or
+                 (match := re.search('Vicinity of: (.*)', line))):
+                if args.debug: print(line)
+                location = extract_location(match.group(1))
+                print (f'{date} {time} {location}\n')
                 continue
             
-    print("==========================================================")
+    if args.debug: print("=================== NEXT PAGE =======================================")
     
