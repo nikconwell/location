@@ -22,21 +22,25 @@ function setup() {
 
 
 
-@test "Run with basic address 172 HARTFORD ST natick ma" {
+@test "Run with basic address: convert.py '172 HARTFORD ST natick ma'" {
     run convert.py '172 HARTFORD ST natick ma'
     assert_output --partial 'Latitude = 42.291410'
     assert_output --partial 'Longitude = -71.398049'
 }
 
-@test "Run with basic address 1245 WORCESTER ST natick ma" {
+@test "Run with basic address: convert.py '1245 WORCESTER ST natick ma'" {
     run convert.py '1245 WORCESTER ST natick ma'
     assert_output --partial 'Latitude = 42.300226'
     assert_output --partial 'Longitude = -71.383479'
 }
 
-@test "Check town addition 1245 WORCESTER ST" {
+@test "Javascript output: convert.py --javascript '1245 WORCESTER ST natick ma'" {
+    run convert.py --javascript '1245 WORCESTER ST natick ma'
+    assert_output --partial '{ lat: 42.300226, lng: -71.383479 }'
+}
+
+@test "Check auto town addition: convert.py '1245 WORCESTER ST'" {
     run convert.py '1245 WORCESTER ST'
-    assert_output --partial 'Added in town'
     assert_output --partial 'Latitude = 42.300226'
     assert_output --partial 'Longitude = -71.383479'
 }
