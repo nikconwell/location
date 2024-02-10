@@ -96,7 +96,7 @@ for page in reader.pages:
                  (match := re.search('Vicinity of: (.*)', line))):
                 if args.debug: print(line)
                 location = extract_location(match.group(1))
-                print (f'{date} {time} {location}\n')
+                print (f'{date} {time} {location}')
                 continue
             
     if args.debug: print("=================== NEXT PAGE =======================================")
