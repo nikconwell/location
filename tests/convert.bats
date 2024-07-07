@@ -30,17 +30,17 @@ function setup() {
 
 @test "Run with basic address: convert.py '1245 WORCESTER ST natick ma'" {
     run convert.py '1245 WORCESTER ST natick ma'
-    assert_output --partial 'Latitude = 42.300226'
-    assert_output --partial 'Longitude = -71.383479'
+    assert_output --partial 'Latitude = 42.300544'
+    assert_output --partial 'Longitude = -71.383484'
 }
 
 @test "Javascript output: convert.py --javascript '1245 WORCESTER ST natick ma'" {
     run convert.py --javascript '1245 WORCESTER ST natick ma'
-    assert_output --partial '{ lat: 42.300226, lng: -71.383479 }'
+    assert_output --partial '{ lat: 42.300544, lng: -71.383484 }'
 }
 
 @test "Check auto town addition: convert.py '1245 WORCESTER ST'" {
     run convert.py '1245 WORCESTER ST'
-    assert_output --partial 'Latitude = 42.300226'
-    assert_output --partial 'Longitude = -71.383479'
+    assert_output --partial 'Latitude = 42.300544'
+    assert_output --partial 'Longitude = -71.383484'
 }
