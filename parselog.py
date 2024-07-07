@@ -75,13 +75,13 @@ for page in reader.pages:
         #
         # Line indicating what date we are working on?
         #                                   MM/DD/YYYY
-        if (match := re.search('^\s*For Date:\s*(\d+/\d+/\d+)', line)):
+        if (match := re.search(r'^\s*For Date:\s*(\d+/\d+/\d+)', line)):
             date = match.group(1)
 
         # Are we in a new section???
         # 24-22           2331 MOTOR VEHICLE STOP Citation/ Warning Issued
         # YY-COUNT        HHMM REASON
-        if (match := re.search('^(\d+)-(\d+)\s+(\d+)\s+(.*)', line)):
+        if (match := re.search(r'^(\d+)-(\d+)\s+(\d+)\s+(.*)', line)):
             # Do we have an interesting REASON for motor vehicle stop?
             if re.search('MOTOR VEHICLE STOP',match.group(4)):
                 interesting = True
