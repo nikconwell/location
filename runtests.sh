@@ -1,4 +1,4 @@
 #!/bin/bash
 
-bats tests/convert.bats
+bats tests/latlong.bats
 bats tests/parse.bats

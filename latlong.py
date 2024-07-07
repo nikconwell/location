@@ -11,7 +11,7 @@ import re
 #
 # Args
 #
-argParser = argparse.ArgumentParser(prog="convert.py",
+argParser = argparse.ArgumentParser(prog="latlong.py",
                                     description="Convert street address to latitude/longitude.")
                                     
 argParser.add_argument('--debug', dest='debug', default=False, action='store_true', help='Debug mode for various things')
