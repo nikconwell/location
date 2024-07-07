@@ -15,10 +15,10 @@ import re
 # The street line as string
 #
 def extract_location(addressline):
-    regexes = ['(\d+[\w ]+\s+ST)',
-               '(\d+[\w ]+\s+RD)',
-               '(\d+[\w ]+\s+AVE)',
-               '(\d+[\w ]+)',             # catch all with no rd, st, ave, etc.
+    regexes = [r'(\d+[\w ]+\s+ST)',
+               r'(\d+[\w ]+\s+RD)',
+               r'(\d+[\w ]+\s+AVE)',
+               r'(\d+[\w ]+)',             # catch all with no rd, st, ave, etc.
     ]
     parsed=None
     for regex in regexes:
