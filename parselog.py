@@ -30,7 +30,8 @@ def extract_location(addressline):
         if args.debug: print(f'parsed = {parsed}')
         return parsed
     else:
-        print(f"ERROR, NOT ABLE TO PARSE ADDRESS {addressline}")
+        print(f"WARNING, NOT ABLE TO PARSE ADDRESS {addressline}")
+        return None
     
 
 
@@ -38,7 +39,7 @@ def extract_location(addressline):
 # Args
 #
 argParser = argparse.ArgumentParser(prog="parselog.py",
-                                    description="Read Town of Natick Police Logs.")
+                                    description="Read Town of Natick Police Logs, extracting address information of any MOTOR VEHICLE STOP.")
                                     
 argParser.add_argument('--debug', dest='debug', default=False, action='store_true', help='Debug mode for various things')
 argParser.add_argument('--input', dest='input', required=True, help='PDF file to parse / process')
@@ -95,8 +96,8 @@ for page in reader.pages:
             if ((match := re.search('Location/Address: (.*)', line)) or
                  (match := re.search('Vicinity of: (.*)', line))):
                 if args.debug: print(line)
-                location = extract_location(match.group(1))
-                print (f'{date} {time} {location}')
+                if (location := extract_location(match.group(1))):
+                    print (f'{date} {time} {location}')
                 continue
             
     if args.debug: print("=================== NEXT PAGE =======================================")
