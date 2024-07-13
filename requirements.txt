@@ -1,2 +1,4 @@
 geopy
 PyPDF2
+requests
+beautifulsoup4
