@@ -56,7 +56,10 @@ def latlong(addressline,lookfor,add,loc):
 
     args.debug and print(f'About to loc.geocode(str({addressline}))')
     getLoc = loc.geocode(addressline)
-    return (f'{getLoc.latitude:.6f}',f'{getLoc.longitude:.6f}',f'{getLoc.address}')
+    if getLoc:
+        return (f'{getLoc.latitude:.6f}',f'{getLoc.longitude:.6f}',f'{getLoc.address}')
+    else:
+        return (None,None,None)
 
 #
 # Wrapper for above latlong for when called by the DataFrame.apply() function
