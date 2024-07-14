@@ -1,12 +1,35 @@
 #!/home/nik/github/location/venv/bin/python
 
 
+#
+# Parse Town of Natick police logs PDFs into one line of interesting things
+#
+
+
+
 
 # pip install PyPDF2
 from PyPDF2 import PdfReader 
 
 import argparse
 import re
+
+
+#
+# Args
+#
+argParser = argparse.ArgumentParser(prog="parselog.py",
+                                    description="Read Town of Natick Police Logs, extracting address information of any MOTOR VEHICLE STOP.")
+                                    
+argParser.add_argument('--debug', dest='debug', default=False, action='store_true', help='Debug mode for various things')
+argParser.add_argument('--input', dest='input', required=True, nargs='+', help='PDF file(s) to parse / process')
+argParser.add_argument('--justdump', dest='justdump', default=False, action='store_true', help="Just dump the entire pdf, no processing")
+
+
+args = argParser.parse_args()
+
+if (args.debug): 
+    print(f"You passed filename(s) >>>{args.input}<<<")
 
 
 #
@@ -34,71 +57,67 @@ def extract_location(addressline):
         return None
     
 
+# CSV output header
+print(f'Date,Address,Reason')
 
 #
-# Args
+# Iterate through the given PDFs
 #
-argParser = argparse.ArgumentParser(prog="parselog.py",
-                                    description="Read Town of Natick Police Logs, extracting address information of any MOTOR VEHICLE STOP.")
-                                    
-argParser.add_argument('--debug', dest='debug', default=False, action='store_true', help='Debug mode for various things')
-argParser.add_argument('--input', dest='input', required=True, help='PDF file to parse / process')
-argParser.add_argument('--justdump', dest='justdump', default=False, action='store_true', help="Just dump the entire pdf, no processing")
+    
+for filename in args.input:
+    if args.debug: print(f'>>>>>> Processing {filename}')
+    reader = PdfReader(filename)
+    if args.debug: print(f'>>>>>> PDF has {len(reader.pages)} pages')
 
-args = argParser.parse_args()
-
-if (args.debug): 
-    print(f"You passed a filename >>>{args.input}<<<")
-
-reader = PdfReader(args.input)
-if args.debug:
-    print(f"PDF has {len(reader.pages)} pages")
+    interesting = False         # Will set to True when we want to focus on an interesting "paragraph" of the text. Could span 2 pages...
+    date = None
+    time = None
 
 
-interesting = False         # Will set to True when we want to focus on an interesting "paragraph" of the text. Could span 2 pages...
-date = None
-time = None
-#
-# Iterate pages in the PDF
-#
-for page in reader.pages:
-    if args.debug:
-        print("Processing page")
-    text = page.extract_text()
     #
-    # Iterate through each line of this page.
+    # Iterate pages in the PDF
     #
-    for line in text.split('\n'):
-        # Just dumping entire file to text? Print and shortcut here.
-        if (args.justdump):
-            print(line)
-            continue
+    for page in reader.pages:
+        args.debug and print("Processing page")
+        text = page.extract_text()
+
         #
-        # Line indicating what date we are working on?
-        #                                   MM/DD/YYYY
-        if (match := re.search(r'^\s*For Date:\s*(\d+/\d+/\d+)', line)):
-            date = match.group(1)
+        # Iterate through each line of this page.
+        #
+        for line in text.split('\n'):
+            # Just dumping entire file to text? Print and shortcut here.
+            if (args.justdump):
+                print(line)
+                continue
+            #
+            # Line indicating what date we are working on?
+            #                                          MM /  DD / YYYY
+            #                                           1     2    3
+            if (match := re.search(r'^\s*For Date:\s*(\d+)/(\d+)/(\d+)', line)):
+                date = f'{match.group(3)}/{match.group(1)}/{match.group(2)}'
 
-        # Are we in a new section???
-        # 24-22           2331 MOTOR VEHICLE STOP Citation/ Warning Issued
-        # YY-COUNT        HHMM REASON
-        if (match := re.search(r'^(\d+)-(\d+)\s+(\d+)\s+(.*)', line)):
-            # Do we have an interesting REASON for motor vehicle stop?
-            if re.search('MOTOR VEHICLE STOP',match.group(4)):
-                interesting = True
-                time = match.group(3)
-                if args.debug:
-                    print(line)
-            else:
-                interesting = False
+            # Are we in a new section???
+            #                          24-22            2331        MOTOR VEHICLE STOP Citation/ Warning Issued
+            #                          YY-COUNT         HHMM        REASON
+            #                          1     2         3    4       5
+            if (match := re.search(r'^(\d+)-(\d+)\s+(\d\d)(\d\d)\s+(.*)', line)):
+                # Do we have an interesting REASON for motor vehicle stop?
+                if re.search('MOTOR VEHICLE STOP',match.group(5)):
+                    interesting = True
+                    time = f'{match.group(3)}:{match.group(4)}:00'
+                    reason = f'{match.group(5)}'
+                    if args.debug: print(line)
+                else:
+                    interesting = False
 
-        if (interesting):
-            if ((match := re.search('Location/Address: (.*)', line)) or
-                 (match := re.search('Vicinity of: (.*)', line))):
+            #
+            # If we are watching this section, is it an address line?
+            #
+            if (interesting and ((match := re.search('Location/Address: (.*)', line)) or
+                                 (match := re.search('Vicinity of: (.*)', line)))):
                 if args.debug: print(line)
                 if (location := extract_location(match.group(1))):
-                    print (f'{date} {time} {location}')
-                continue
+                    print (f'{date} {time},{location},{reason}')
+                    continue
             
-    if args.debug: print("=================== NEXT PAGE =======================================")
-    
+        if args.debug: print("=================== NEXT PDF PAGE =======================================")
