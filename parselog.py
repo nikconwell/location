@@ -106,7 +106,7 @@ for filename in args.input:
                 if re.search('MOTOR VEHICLE STOP',match.group(5)):
                     interesting = True
                     time = f'{match.group(3)}:{match.group(4)}:00'
-                    reason = f'{match.group(5)}'
+                    reason = f'{match.group(5).strip()}'
                     if args.debug: print(line)
                 else:
                     interesting = False
