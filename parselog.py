@@ -118,7 +118,7 @@ for filename in args.input:
                                  (match := re.search('Vicinity of: (.*)', line)))):
                 if args.debug: print(line)
                 if (location := extract_location(match.group(1))):
-                    print (f'{date} {time},{location},{reason}')
+                    print (f'{date} {time},"{location}","{reason}"')
                     continue
             
         if args.debug: print("=================== NEXT PDF PAGE =======================================")

@@ -23,12 +23,12 @@ function setup() {
 
 @test "Pull out basic log information: parselog.py --input log.pdf | head" {
     run bash -c "parselog.py --input log.pdf | head"
-    assert_output --partial '2024/01/01 13:21:00,171 HARTFORD ST'
+    assert_output --partial '2024/01/01 13:21:00,"171 HARTFORD ST"'
 }
 
 @test "Pull out basic log information: parselog.py --input log.pdf | tail" {
     run bash -c "parselog.py --input log.pdf | tail"
-    assert_output --partial '2024/01/06 20:28:00,1245 WORCESTER ST'
+    assert_output --partial '2024/01/06 20:28:00,"1245 WORCESTER ST"'
 }
 
 
