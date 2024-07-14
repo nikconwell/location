@@ -13,6 +13,7 @@ from PyPDF2 import PdfReader
 
 import argparse
 import re
+import sys
 
 
 #
@@ -53,7 +54,7 @@ def extract_location(addressline):
         if args.debug: print(f'parsed = {parsed}')
         return parsed
     else:
-        print(f"WARNING, NOT ABLE TO PARSE ADDRESS {addressline}")
+        print(f">>>>>> WARNING, NOT ABLE TO PARSE ADDRESS {addressline}",file=sys.stderr)
         return None
     
 
