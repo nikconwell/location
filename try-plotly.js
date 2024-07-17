@@ -1,19 +1,19 @@
 d3.csv(
   "https://raw.githubusercontent.com/nikconwell/location/main/activity.csv",
   function (err, rows) {
-    function unpack(rows, key) {
-      return rows.map((row) => row[key]);
-    }
-//      return rows.map(function (row) {
-//        return row[key];
-//      });
+
     var data = [
       {
         type: "scattermapbox",
-        lon: unpack(rows, "long"),
-        lat: unpack(rows, "lat"),
-        text: unpack(rows, "normalized"),
-        hovertext: unpack(rows, "Reason"),
+        lon: rows.map((row) => row['long']),
+        lat: rows.map((row) => row['lat']),
+        text: rows.map((row) => row['Reason']),
+        customdata: rows.map((row => row['Date'] + "<br>" + 
+                              row['Reason'] + "<br>" + 
+                              row['Address'] + "<br>" + 
+                              row['normalized'])),
+        hovertemplate: '%{customdata}',
+        name: "",
         zoom: 8,
         marker: {
           size: 8,
@@ -29,8 +29,8 @@ d3.csv(
         style: "open-street-map",
         zoom: 12
       },
-      dragmode: "zoom",
-      margin: { r: 0, t: 0, b: 0, l: 0 }
+      margin: { r: 0, t: 0, b: 0, l: 0 },
+      hoverlabel: { align: "left"},
     };
 
     Plotly.newPlot("myDiv", data, layout);
