@@ -28,6 +28,8 @@ argParser = argparse.ArgumentParser(prog="parselog.py",
 argParser.add_argument('--debug', dest='debug', default=False, action='store_true', help='Debug mode for various things')
 argParser.add_argument('--input', dest='input', required=True, nargs='+', help='PDF file(s) to parse / process')
 argParser.add_argument('--justdump', dest='justdump', default=False, action='store_true', help="Just dump the entire pdf, no processing")
+argParser.add_argument('--lookfor', dest='lookfor', default='natick', help='regex to look for in the address (default natick)')
+argParser.add_argument('--add', dest='add', default='natick, ma', help='Town to add at the end of the address (based on if lookfor is true) (default "natick, ma")')
 
 
 args = argParser.parse_args()
@@ -37,9 +39,16 @@ if (args.debug):
 
 
 #
+# Init connection to Geopy
+#
+loc = Nominatim(user_agent="Geopy Library")
+
+
+    
+#
 # Given an address line, parse out the vague information to focus on the street
 # Returns:
-# The street line as string
+# log_location,latitude,longitude,normalized_location
 #
 def extract_location(addressline):
     regexes = [r'(\d+[\w ]+\s+ST)',
@@ -47,48 +56,30 @@ def extract_location(addressline):
                r'(\d+[\w ]+\s+AVE)',
                r'(\d+[\w ]+)',             # catch all with no rd, st, ave, etc.
     ]
-    parsed=None
+    log_address=None
     for regex in regexes:
         match = re.search(regex,addressline)
         if (match):
-            parsed = match.group(1)
+            log_address = match.group(1)
             break
-    if (parsed):
-        if args.debug: print(f'parsed = {parsed}')
-        return parsed
-    else:
+    if (not log_address):
         print(f">>>>>> WARNING, NOT ABLE TO PARSE ADDRESS {addressline}",file=sys.stderr)
-        return None
-    
+        return (None,None,None,None)
 
-#
-# Look up lat/long for the address
-# Returns:
-# (lat,long,normalized_address)
-#
-def latlong(addressline,lookfor,add,loc):
-    lat=None
-    long=None
+    addresswithtown = log_address
+    if (not re.search(args.lookfor,addresswithtown)):
+        args.debug and print(f'Did not find {args.lookfor} so added {args.add} to address')
+        addresswithtown += f', {args.add}'
 
-    args.debug and print(f'In latlong() lookfor={lookfor} add={add} loc={loc}')
-    # Add in town/state if needed
-    if (not re.search(lookfor, addressline)):
-        args.debug and print(f'Did not find {lookfor} so added {add} to address')
-        addressline += f', {add}'
-
-    args.debug and print(f'About to loc.geocode(str({addressline}))')
-    getLoc = loc.geocode(addressline)
-    if getLoc:
-        return (f'{getLoc.latitude:.6f}',f'{getLoc.longitude:.6f}',f'{getLoc.address}')
+    (getLoc) = loc.geocode(addresswithtown)
+    if (getLoc):
+        return (log_address,f'{getLoc.latitude:.6f}',f'{getLoc.longitude:.6f}',getLoc.address)
     else:
-        return (None,None,None)
+        return(None,None,None,None)
 
 
-
-
-    
 # CSV output header
-print(f'Date,Address,Reason')
+print(f'Date,Address,Reason,lat,long,Normalized_Address')
 
 #
 # Iterate through the given PDFs
@@ -142,8 +133,9 @@ for filename in args.input:
             if (interesting and ((match := re.search('Location/Address: (.*)', line)) or
                                  (match := re.search('Vicinity of: (.*)', line)))):
                 if args.debug: print(line)
-                if (location := extract_location(match.group(1))):
-                    print (f'{date} {time},"{location}","{reason}"')
+                (log_location,lat,long,normalized_location) = extract_location(match.group(1))
+                if (log_location):
+                    print (f'{date} {time},"{log_location}","{reason}",{lat},{long},"{normalized_location}"')
                     continue
             
         if args.debug: print("=================== NEXT PDF PAGE =======================================")
