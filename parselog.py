@@ -2,7 +2,7 @@
 
 
 #
-# Parse Town of Natick police logs PDFs into one line of interesting things
+# Parse Town of Natick police logs PDFs into one CSV of interesting things
 #
 
 
@@ -10,6 +10,9 @@
 
 # pip install PyPDF2
 from PyPDF2 import PdfReader 
+
+# address -> lat/long
+from geopy.geocoders import Nominatim
 
 import argparse
 import re
@@ -58,6 +61,32 @@ def extract_location(addressline):
         return None
     
 
+#
+# Look up lat/long for the address
+# Returns:
+# (lat,long,normalized_address)
+#
+def latlong(addressline,lookfor,add,loc):
+    lat=None
+    long=None
+
+    args.debug and print(f'In latlong() lookfor={lookfor} add={add} loc={loc}')
+    # Add in town/state if needed
+    if (not re.search(lookfor, addressline)):
+        args.debug and print(f'Did not find {lookfor} so added {add} to address')
+        addressline += f', {add}'
+
+    args.debug and print(f'About to loc.geocode(str({addressline}))')
+    getLoc = loc.geocode(addressline)
+    if getLoc:
+        return (f'{getLoc.latitude:.6f}',f'{getLoc.longitude:.6f}',f'{getLoc.address}')
+    else:
+        return (None,None,None)
+
+
+
+
+    
 # CSV output header
 print(f'Date,Address,Reason')
 
@@ -102,14 +131,10 @@ for filename in args.input:
             #                          YY-COUNT         HHMM        REASON
             #                          1     2         3    4       5
             if (match := re.search(r'^(\d+)-(\d+)\s+(\d\d)(\d\d)\s+(.*)', line)):
-                # Do we have an interesting REASON for motor vehicle stop?
-                if re.search('MOTOR VEHICLE STOP',match.group(5)):
-                    interesting = True
-                    time = f'{match.group(3)}:{match.group(4)}:00'
-                    reason = f'{match.group(5).strip()}'
-                    if args.debug: print(line)
-                else:
-                    interesting = False
+                interesting = True
+                time = f'{match.group(3)}:{match.group(4)}:00'
+                reason = f'{match.group(5).strip()}'
+                if args.debug: print(line)
 
             #
             # If we are watching this section, is it an address line?

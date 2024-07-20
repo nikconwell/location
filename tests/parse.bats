@@ -28,7 +28,7 @@ function setup() {
 
 @test "Pull out basic log information: parselog.py --input log.pdf | tail" {
     run bash -c "parselog.py --input log.pdf | tail"
-    assert_output --partial '2024/01/06 20:28:00,"1245 WORCESTER ST"'
+    assert_output --partial '19:21:00,"6 VILLAGE HILL LN","M/ V CRASH/ PRIVATE PROPERTY Report to be filed"'
 }
 
 
