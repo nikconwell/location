@@ -12,7 +12,10 @@
 from PyPDF2 import PdfReader 
 
 # address -> lat/long
-from geopy.geocoders import Nominatim
+# https://geocoding.geo.census.gov/geocoder/
+# https://geocoding.geo.census.gov/geocoder/Geocoding_Services_API.html
+# https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4600+Silver+Hill+Rd%2C+Washington%2C+DC+20233&benchmark=4&format=json
+import requests
 
 import argparse
 import re
@@ -23,7 +26,7 @@ import sys
 # Args
 #
 argParser = argparse.ArgumentParser(prog="parselog.py",
-                                    description="Read Town of Natick Police Logs, extracting address information of any MOTOR VEHICLE STOP.")
+                                    description="Read Town of Natick Police Logs, extracting address information")
                                     
 argParser.add_argument('--debug', dest='debug', default=False, action='store_true', help='Debug mode for various things')
 argParser.add_argument('--input', dest='input', required=True, nargs='+', help='PDF file(s) to parse / process')
@@ -39,13 +42,6 @@ if (args.debug):
 
 
 #
-# Init connection to Geopy
-#
-loc = Nominatim(user_agent="Geopy Library")
-
-
-    
-#
 # Given an address line, parse out the vague information to focus on the street
 # Returns:
 # log_location,latitude,longitude,normalized_location
@@ -54,9 +50,12 @@ def extract_location(addressline):
     regexes = [r'(\d+[\w ]+\s+ST)',
                r'(\d+[\w ]+\s+RD)',
                r'(\d+[\w ]+\s+AVE)',
+               r'(\d+[\w ]+\s+WAY)',
+               r'(\d+[\w ]+\s+CIR)',
                r'(\d+[\w ]+)',             # catch all with no rd, st, ave, etc.
     ]
     log_address=None
+
     for regex in regexes:
         match = re.search(regex,addressline)
         if (match):
@@ -68,14 +67,29 @@ def extract_location(addressline):
 
     addresswithtown = log_address
     if (not re.search(args.lookfor,addresswithtown)):
-        args.debug and print(f'Did not find {args.lookfor} so added {args.add} to address')
         addresswithtown += f', {args.add}'
 
-    (getLoc) = loc.geocode(addresswithtown)
-    if (getLoc):
-        return (log_address,f'{getLoc.latitude:.6f}',f'{getLoc.longitude:.6f}',getLoc.address)
-    else:
-        return(None,None,None,None)
+
+    args.debug and print(f'>>>>>> {addressline} ==PARSED==> Querying {addresswithtown} ')
+    
+    response = requests.get("https://geocoding.geo.census.gov/geocoder/locations/onelineaddress",
+                            params = {
+                                "address": addresswithtown,
+                                "benchmark": "Public_AR_Current",
+                                "format": "json"
+                                }
+                            )
+    if response.status_code == 200:
+        data = response.json()
+        if len(data['result']['addressMatches']):
+            return(log_address,
+                   f"{data['result']['addressMatches'][0]['coordinates']['y']:.6f}",
+                   f"{data['result']['addressMatches'][0]['coordinates']['x']:.6f}",
+                   f"{data['result']['addressMatches'][0]['matchedAddress']}"
+            )
+
+    print(f">>>>>> WARNING, NO GEO information for {addresswithtown} (parsed from >>{addressline}<<)",file=sys.stderr)
+    return (None,None,None,None)
 
 
 # CSV output header
@@ -99,7 +113,7 @@ for filename in args.input:
     # Iterate pages in the PDF
     #
     for page in reader.pages:
-        args.debug and print("Processing page")
+        args.debug and print(">>>>>> Processing page")
         text = page.extract_text()
 
         #
@@ -129,13 +143,16 @@ for filename in args.input:
 
             #
             # If we are watching this section, is it an address line?
+            # Some address lines have address1 @ address2 so handle those
             #
             if (interesting and ((match := re.search('Location/Address: (.*)', line)) or
                                  (match := re.search('Vicinity of: (.*)', line)))):
                 if args.debug: print(line)
-                (log_location,lat,long,normalized_location) = extract_location(match.group(1))
-                if (log_location):
-                    print (f'{date} {time},"{log_location}","{reason}",{lat},{long},"{normalized_location}"')
-                    continue
+                addressline = match.group(1).strip()
+                for address in addressline.split('@'):
+                    (log_location,lat,long,normalized_location) = extract_location(address)
+                    if (log_location):
+                        print (f'{date} {time},"{log_location}","{reason}",{lat},{long},"{normalized_location}"')
+                        break
             
         if args.debug: print("=================== NEXT PDF PAGE =======================================")
