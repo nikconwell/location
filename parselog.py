@@ -32,7 +32,7 @@ argParser.add_argument('--debug', dest='debug', default=False, action='store_tru
 argParser.add_argument('--input', dest='input', required=True, nargs='+', help='PDF file(s) to parse / process')
 argParser.add_argument('--justdump', dest='justdump', default=False, action='store_true', help="Just dump the entire pdf, no processing")
 argParser.add_argument('--lookfor', dest='lookfor', default='natick', help='regex to look for in the address (default natick)')
-argParser.add_argument('--add', dest='add', default='natick, ma', help='Town to add at the end of the address (based on if lookfor is true) (default "natick, ma")')
+argParser.add_argument('--add', dest='add', default='natick, ma, 01760', help='Town to add at the end of the address (based on if lookfor is true) (default "natick, ma, 01760")')
 
 
 args = argParser.parse_args()

@@ -11,7 +11,7 @@ d3.csv(
         customdata: rows.map((row => row['Date'] + "<br>" + 
                               row['Reason'] + "<br>" + 
                               row['Address'] + "<br>" + 
-                              row['normalized'])),
+                              row['Normalized_Address'])),
         hovertemplate: '%{customdata}',
         name: "",
         zoom: 8,
