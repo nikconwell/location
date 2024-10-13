@@ -5,6 +5,11 @@
 # Parse Town of Natick police logs PDFs into one CSV of interesting things
 #
 
+# 1. Read given PDF
+# 2. Look for sections which indicate an activity and reason
+# 3. Look for location or vicinity in the section for address information.
+# 4. Use Census web api to convert address to lat long. Note this is not really the most accurate
+#    but it is free.
 
 
 
@@ -19,7 +24,9 @@ import requests
 
 import argparse
 import re
+import os
 import sys
+import json
 
 
 #
@@ -33,12 +40,26 @@ argParser.add_argument('--input', dest='input', required=True, nargs='+', help='
 argParser.add_argument('--justdump', dest='justdump', default=False, action='store_true', help="Just dump the entire pdf, no processing")
 argParser.add_argument('--lookfor', dest='lookfor', default='natick', help='regex to look for in the address (default natick)')
 argParser.add_argument('--add', dest='add', default='natick, ma, 01760', help='Town to add at the end of the address (based on if lookfor is true) (default "natick, ma, 01760")')
+argParser.add_argument('--geodata', dest='geodata', default='geodata.json', help='File containing cached geolocation information so we do not repeatedly look things up')
+argParser.add_argument('--geofail', dest='geofail', default='geofail.json', help='File containing geolocation failures so we can try to resolve them later with other things')
 
 
 args = argParser.parse_args()
 
 if (args.debug): 
     print(f"You passed filename(s) >>>{args.input}<<<")
+
+
+
+# Load in our cache of geodata.
+geodata = {}
+if (os.path.exists(args.geodata)):
+    with open(args.geodata, 'r') as json_file:
+        geodata = json.load(json_file)
+geofail = {}
+if (os.path.exists(args.geofail)):
+    with open(args.geofail, 'r') as json_file:
+        geofail = json.load(json_file)
 
 
 #
@@ -150,9 +171,33 @@ for filename in args.input:
                 if args.debug: print(line)
                 addressline = match.group(1).strip()
                 for address in addressline.split('@'):
-                    (log_location,lat,long,normalized_location) = extract_location(address)
+                    log_location = None
+                    if (address in geofail):
+                        if args.debug: print(f">>>>>> No GEO information for address (as per geofail) so skipping {address}",file=sys.stderr)
+                        continue
+                    if (address in geodata):
+                        log_location = geodata[address]['log_location']
+                        lat = geodata[address]['lat']
+                        long = geodata[address]['long']
+                        normalized_location = geodata[address]['normalized_location']
+                    else:
+                        (log_location,lat,long,normalized_location) = extract_location(address)
+                        if (log_location):
+                            geodata[address] = {'coder': 'census', 'log_location': log_location, 'normalized_location': normalized_location, 'lat': lat, 'long': long}
+                        else:
+                            geofail[address] = {'coder': 'census'}
                     if (log_location):
                         print (f'{date} {time},"{log_location}","{reason}",{lat},{long},"{normalized_location}"')
                         break
             
         if args.debug: print("=================== NEXT PDF PAGE =======================================")
+
+
+# Finally at the end, save off our geodata
+
+with open(args.geodata, 'w') as json_file:
+    json.dump(geodata, json_file, indent=4)
+with open(args.geofail, 'w') as json_file:
+    json.dump(geofail, json_file, indent=4)
+
+if args.debug: print(f'geodata saved to {args.geodata}')
