@@ -8,6 +8,19 @@ import argparse
 
 
 #
+# Download all Town of Natick Police Logs from the base URL.
+#
+
+
+
+
+#
+# Todo - Do not download if file already exists. Maybe add flag --redownload to make it download again.
+#
+
+
+
+#
 # Args
 #
 argParser = argparse.ArgumentParser(prog="download.py",
