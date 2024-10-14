@@ -65,7 +65,7 @@ if (os.path.exists(args.geofail)):
 #
 # Given an address line, parse out the vague information to focus on the street
 # Returns:
-# log_location,latitude,longitude,normalized_location
+# normalized_address,latitude,longitude
 #
 def extract_location(addressline):
     regexes = [r'(\d+[\w ]+\s+ST)',
@@ -84,7 +84,7 @@ def extract_location(addressline):
             break
     if (not log_address):
         print(f">>>>>> WARNING, NOT ABLE TO PARSE ADDRESS {addressline}",file=sys.stderr)
-        return (None,None,None,None)
+        return (None,None,None)
 
     addresswithtown = log_address
     if (not re.search(args.lookfor,addresswithtown)):
@@ -103,18 +103,22 @@ def extract_location(addressline):
     if response.status_code == 200:
         data = response.json()
         if len(data['result']['addressMatches']):
-            return(log_address,
+            return(f"{data['result']['addressMatches'][0]['matchedAddress']}",
                    f"{data['result']['addressMatches'][0]['coordinates']['y']:.6f}",
                    f"{data['result']['addressMatches'][0]['coordinates']['x']:.6f}",
-                   f"{data['result']['addressMatches'][0]['matchedAddress']}"
             )
 
     print(f">>>>>> WARNING, NO GEO information for {addresswithtown} (parsed from >>{addressline}<<)",file=sys.stderr)
-    return (None,None,None,None)
+    return (None,None,None)
 
+#
+#
+# Main Code
+#
+#
 
 # CSV output header
-print(f'Date,Address,Reason,lat,long,Normalized_Address')
+print(f'Date,Log_Address,Reason,lat,long,Normalized_Address')
 
 #
 # Iterate through the given PDFs
@@ -170,24 +174,23 @@ for filename in args.input:
                                  (match := re.search('Vicinity of: (.*)', line)))):
                 if args.debug: print(line)
                 addressline = match.group(1).strip()
-                for address in addressline.split('@'):
-                    log_location = None
-                    if (address in geofail):
-                        if args.debug: print(f">>>>>> No GEO information for address (as per geofail) so skipping {address}",file=sys.stderr)
+                for log_address in addressline.split('@'):
+                    normalized_address = None
+                    if (log_address in geofail):
+                        if args.debug: print(f">>>>>> No GEO information for address (as per {geofail}) so skipping {log_address}",file=sys.stderr)
                         continue
-                    if (address in geodata):
-                        log_location = geodata[address]['log_location']
-                        lat = geodata[address]['lat']
-                        long = geodata[address]['long']
-                        normalized_location = geodata[address]['normalized_location']
+                    if (log_address in geodata):
+                        lat = geodata[log_address]['lat']
+                        long = geodata[log_address]['long']
+                        normalized_address = geodata[log_address]['normalized_address']
                     else:
-                        (log_location,lat,long,normalized_location) = extract_location(address)
-                        if (log_location):
-                            geodata[address] = {'coder': 'census', 'log_location': log_location, 'normalized_location': normalized_location, 'lat': lat, 'long': long}
+                        (normalized_address,lat,long) = extract_location(log_address)
+                        if (normalized_address):
+                            geodata[log_address] = {'coder': 'census', 'normalized_address': normalized_address, 'lat': lat, 'long': long}
                         else:
-                            geofail[address] = {'coder': 'census'}
-                    if (log_location):
-                        print (f'{date} {time},"{log_location}","{reason}",{lat},{long},"{normalized_location}"')
+                            geofail[log_address] = {'coder': 'census'}
+                    if (normalized_address):
+                        print (f'{date} {time},"{log_address}","{reason}",{lat},{long},"{normalized_address}"')
                         break
             
         if args.debug: print("=================== NEXT PDF PAGE =======================================")
@@ -197,7 +200,7 @@ for filename in args.input:
 
 with open(args.geodata, 'w') as json_file:
     json.dump(geodata, json_file, indent=4)
+if args.debug: print(f'geodata saved to {args.geodata}')
 with open(args.geofail, 'w') as json_file:
     json.dump(geofail, json_file, indent=4)
-
-if args.debug: print(f'geodata saved to {args.geodata}')
+if args.debug: print(f'geofail saved to {args.geofail}')
