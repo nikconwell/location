@@ -111,6 +111,34 @@ def extract_location(addressline):
     print(f">>>>>> WARNING, NO GEO information for {addresswithtown} (parsed from >>{addressline}<<)",file=sys.stderr)
     return (None,None,None)
 
+
+
+
+#
+# Given a reason from the logs, focus down on common reasons
+#
+def extract_reason(log_reason):
+    normalized_reason=log_reason
+    # More general patterns at the end
+    patterns = [r'\s*log\s+entry\s*',
+                r'\s*services\s+\S+',
+                r'\s*report to be filed',
+                r'\s*citation/\s+warning\s+issued',
+                r'\s*summons\s+request\s*',
+                r'\s*gone\s+on\s+arrival\s*',
+                r'\s+P\s+-\s*',
+                r'\s*F\s+-\s*',
+                r'^\s+',
+                r'\s+$'
+                ]
+    for pattern in patterns: 
+        normalized_reason=re.sub(pattern,'',normalized_reason,flags=re.IGNORECASE)
+    return(normalized_reason)
+
+
+
+
+
 #
 #
 # Main Code
@@ -118,7 +146,7 @@ def extract_location(addressline):
 #
 
 # CSV output header
-print(f'Date,Log_Address,Reason,lat,long,Normalized_Address')
+print(f'Date,Log_Address,Log_Reason,Normalized_Reason,lat,long,Normalized_Address')
 
 #
 # Iterate through the given PDFs
@@ -163,7 +191,7 @@ for filename in args.input:
             if (match := re.search(r'^(\d+)-(\d+)\s+(\d\d)(\d\d)\s+(.*)', line)):
                 interesting = True
                 time = f'{match.group(3)}:{match.group(4)}:00'
-                reason = f'{match.group(5).strip()}'
+                log_reason = f'{match.group(5).strip()}'
                 if args.debug: print(line)
 
             #
@@ -190,7 +218,8 @@ for filename in args.input:
                         else:
                             geofail[log_address] = {'coder': 'census'}
                     if (normalized_address):
-                        print (f'{date} {time},"{log_address}","{reason}",{lat},{long},"{normalized_address}"')
+                        normalized_reason = extract_reason(log_reason)
+                        print (f'{date} {time},"{log_address}","{log_reason}","{normalized_reason}",{lat},{long},"{normalized_address}"')
                         break
             
         if args.debug: print("=================== NEXT PDF PAGE =======================================")
