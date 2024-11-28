@@ -120,19 +120,34 @@ def extract_location(addressline):
 def extract_reason(log_reason):
     normalized_reason=log_reason
     # More general patterns at the end
-    patterns = [r'\s*log\s+entry\s*',
-                r'\s*services\s+\S+',
-                r'\s*report to be filed',
-                r'\s*citation/\s+warning\s+issued',
-                r'\s*summons\s+request\s*',
-                r'\s*gone\s+on\s+arrival\s*',
-                r'\s+P\s+-\s*',
-                r'\s*F\s+-\s*',
-                r'^\s+',
-                r'\s+$'
-                ]
-    for pattern in patterns: 
-        normalized_reason=re.sub(pattern,'',normalized_reason,flags=re.IGNORECASE)
+    patterns_list = [
+        {'pattern': r'\s*ALARM,\s+BURGLAR.*', 'replacement': 'ALARM, BURGLAR'},
+        {'pattern': r'\s*animals.*', 'replacement': 'ANIMALS'},
+        {'pattern': r'\s*suspicious activity.*', 'replacement': 'SUSPICIOUS ACTIVITY'},
+        {'pattern': r'\s*MVA.*', 'replacement': 'MOTOR VEHICLE CRASH'},
+        {'pattern': r'\s*MOTOR VEHICLE CRASH.*', 'replacement': 'MOTOR VEHICLE CRASH'},
+        {'pattern': r'\s*M/\s*V CRASH.*', 'replacement': 'MOTOR VEHICLE CRASH'},
+        {'pattern': r'', 'replacement': ''},
+        {'pattern': r'', 'replacement': ''},
+        {'pattern': r'', 'replacement': ''},
+        {'pattern': r'', 'replacement': ''},
+        {'pattern': r'', 'replacement': ''},
+        {'pattern': r'', 'replacement': ''},
+        {'pattern': r'', 'replacement': ''},
+        {'pattern': r'\s*log\s+entry\s*', 'replacement': ''},
+        {'pattern': r'\s*services\s+\S+', 'replacement': ''},
+        {'pattern': r'\s*report to be filed', 'replacement': ''},
+        {'pattern': r'\s*citation/\s+warning\s+issued', 'replacement': ''},
+        {'pattern': r'\s*summons\s+request\s*', 'replacement': ''},
+        {'pattern': r'\s*gone\s+on\s+arrival\s*', 'replacement': ''},
+        {'pattern': r'\s+P\s+-\s*', 'replacement': ''},
+        {'pattern': r'\s*F\s+-\s*', 'replacement': ''},
+        {'pattern': r'^\s+', 'replacement': ''},    
+        {'pattern': r'\s+$', 'replacement': ''}
+    ]
+
+    for pattern_obj in patterns_list: 
+        normalized_reason = re.sub(pattern_obj['pattern'], pattern_obj['replacement'], normalized_reason, flags=re.IGNORECASE)
     return(normalized_reason)
 
 
