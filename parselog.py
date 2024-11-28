@@ -122,13 +122,13 @@ def extract_reason(log_reason):
     # More general patterns at the end
     patterns_list = [
         {'pattern': r'\s*ALARM,\s+BURGLAR.*', 'replacement': 'ALARM, BURGLAR'},
-        {'pattern': r'\s*animals.*', 'replacement': 'ANIMALS'},
-        {'pattern': r'\s*suspicious activity.*', 'replacement': 'SUSPICIOUS ACTIVITY'},
+        {'pattern': r'\s*(ANIMALS).*', 'replacement': r'ANIMALS'},
+        {'pattern': r'\s*(SUSPICIOUS ACTIVITY).*', 'replacement': r'\1'},
         {'pattern': r'\s*MVA.*', 'replacement': 'MOTOR VEHICLE CRASH'},
-        {'pattern': r'\s*MOTOR VEHICLE CRASH.*', 'replacement': 'MOTOR VEHICLE CRASH'},
+        {'pattern': r'\s*(MOTOR VEHICLE CRASH).*', 'replacement': r'\1'},
         {'pattern': r'\s*M/\s*V CRASH.*', 'replacement': 'MOTOR VEHICLE CRASH'},
-        {'pattern': r'', 'replacement': ''},
-        {'pattern': r'', 'replacement': ''},
+        {'pattern': r'\s*(PARKING COMPLAINT).*', 'replacement': r'\1'},
+        {'pattern': r'\s*(HAZARD).*', 'replacement': r'\1'},
         {'pattern': r'', 'replacement': ''},
         {'pattern': r'', 'replacement': ''},
         {'pattern': r'', 'replacement': ''},
