@@ -121,7 +121,7 @@ def extract_reason(log_reason):
     normalized_reason=log_reason
     # More general patterns at the end
     patterns_list = [
-        {'pattern': r'\s*ALARM,\s+BURGLAR.*', 'replacement': 'ALARM, BURGLAR'},
+        {'pattern': r'\s*ALARM,.*', 'replacement': 'ALARM'},
         {'pattern': r'\s*(ANIMALS).*', 'replacement': r'ANIMALS'},
         {'pattern': r'\s*(SUSPICIOUS ACTIVITY).*', 'replacement': r'\1'},
         {'pattern': r'\s*MVA.*', 'replacement': 'MOTOR VEHICLE CRASH'},
@@ -131,6 +131,7 @@ def extract_reason(log_reason):
         {'pattern': r'\s*(BURGLAR).*', 'replacement': r'BURGLAR'},
         {'pattern': r'\s*(HAZARD).*', 'replacement': r'\1'},
         {'pattern': r'\s*(SERVE SUMMONS).*', 'replacement': r'\1'},
+        {'pattern': r'\s*(LOCKOUT).*', 'replacement': r'\1'},
         {'pattern': r'', 'replacement': ''},
         {'pattern': r'', 'replacement': ''},
         {'pattern': r'', 'replacement': ''},

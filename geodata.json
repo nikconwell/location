@@ -4546,5 +4546,2015 @@
         "normalized_address": "157 MILL ST, NATICK, MA, 01760",
         "lat": "42.288586",
         "long": "-71.384229"
+    },
+    "[NAT 4188] EXPONENT AND SHELL - 1075 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "1075 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299359",
+        "long": "-71.365965"
+    },
+    "28 FLORENCE ST": {
+        "coder": "census",
+        "normalized_address": "28 FLORENCE ST, NATICK, MA, 01760",
+        "lat": "42.289430",
+        "long": "-71.344072"
+    },
+    "S AND Z PROPERTIES - 264 NORTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "264 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.307221",
+        "long": "-71.361863"
+    },
+    "[NAT 2005] MARY ANN MORSE NURSING CENTER - 45 UNION ST": {
+        "coder": "census",
+        "normalized_address": "45 UNION ST, NATICK, MA, 01760",
+        "lat": "42.283203",
+        "long": "-71.336260"
+    },
+    "45 FELCH RD": {
+        "coder": "census",
+        "normalized_address": "45 FELCH RD, NATICK, MA, 01760",
+        "lat": "42.311956",
+        "long": "-71.355546"
+    },
+    "31 BODEN LN": {
+        "coder": "census",
+        "normalized_address": "31 BODEN LN, NATICK, MA, 01760",
+        "lat": "42.282350",
+        "long": "-71.390783"
+    },
+    "56 HARTFORD ST": {
+        "coder": "census",
+        "normalized_address": "56 HARTFORD ST, NATICK, MA, 01760",
+        "lat": "42.293403",
+        "long": "-71.385053"
+    },
+    "309 BACON ST": {
+        "coder": "census",
+        "normalized_address": "309 BACON ST, NATICK, MA, 01760",
+        "lat": "42.298121",
+        "long": "-71.363915"
+    },
+    "27 VILLAGE ROCK LN Apt. #18": {
+        "coder": "census",
+        "normalized_address": "27 VILLAGE ROCK LN, NATICK, MA, 01760",
+        "lat": "42.278434",
+        "long": "-71.394782"
+    },
+    "19 GREENLEAF RD": {
+        "coder": "census",
+        "normalized_address": "19 GREENLEAF RD, NATICK, MA, 01760",
+        "lat": "42.288526",
+        "long": "-71.392931"
+    },
+    "74 HARTFORD ST": {
+        "coder": "census",
+        "normalized_address": "74 HARTFORD ST, FRAMINGHAM, MA, 01702",
+        "lat": "42.290097",
+        "long": "-71.406091"
+    },
+    "190 MILL ST ": {
+        "coder": "census",
+        "normalized_address": "190 MILL ST, NATICK, MA, 01760",
+        "lat": "42.291120",
+        "long": "-71.388084"
+    },
+    "[NAT 3585] 17 BACON ST - 17 BACON ST": {
+        "coder": "census",
+        "normalized_address": "17 BACON ST, NATICK, MA, 01760",
+        "lat": "42.294334",
+        "long": "-71.324496"
+    },
+    "[NAT 1491] 8 FLORAL AVE - 8 FLORAL AVE": {
+        "coder": "census",
+        "normalized_address": "8 FLORAL AVE, NATICK, MA, 01760",
+        "lat": "42.279231",
+        "long": "-71.351823"
+    },
+    "[NAT 1831] PETAL PUSHER FLORISTS - 325 NORTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "325 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.313549",
+        "long": "-71.360260"
+    },
+    "4 LODGE LN": {
+        "coder": "census",
+        "normalized_address": "4 LODGE LN, NATICK, MA, 01760",
+        "lat": "42.291378",
+        "long": "-71.376248"
+    },
+    "107B SPEEN ST": {
+        "coder": "census",
+        "normalized_address": "107B SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.279101",
+        "long": "-71.376252"
+    },
+    "160 WEST CENTRAL ST ": {
+        "coder": "census",
+        "normalized_address": "160 W CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.282474",
+        "long": "-71.378819"
+    },
+    "LAUNDROMAT - 148 EAST CENTRAL ST": {
+        "coder": "census",
+        "normalized_address": "148 E CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.287028",
+        "long": "-71.335369"
+    },
+    "52 COTTAGE ST": {
+        "coder": "census",
+        "normalized_address": "52 COTTAGE ST, NATICK, MA, 01760",
+        "lat": "42.275494",
+        "long": "-71.345766"
+    },
+    "159 BODEN LN ": {
+        "coder": "census",
+        "normalized_address": "159 BODEN LN, NATICK, MA, 01760",
+        "lat": "42.286111",
+        "long": "-71.391937"
+    },
+    "319 SPEEN ST": {
+        "coder": "census",
+        "normalized_address": "319 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.301009",
+        "long": "-71.379941"
+    },
+    "[NAT 4368] GOLFTEC - 1400 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "1400 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.298767",
+        "long": "-71.391565"
+    },
+    "[NAT 3162] ST PATRICK'S SCHOOL - 45 EAST CENTRAL ST": {
+        "coder": "census",
+        "normalized_address": "45 E CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.284327",
+        "long": "-71.344056"
+    },
+    " 1 BARNESDALE RD": {
+        "coder": "census",
+        "normalized_address": "1 BARNESDALE RD, NATICK, MA, 01760",
+        "lat": "42.295216",
+        "long": "-71.380651"
+    },
+    "PARKING DECK C - 1245 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "1245 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299500",
+        "long": "-71.377749"
+    },
+    "10 VILLAGE GREEN LN Apt. #15": {
+        "coder": "census",
+        "normalized_address": "10 VILLAGE GREEN LN, NATICK, MA, 01760",
+        "lat": "42.281097",
+        "long": "-71.391754"
+    },
+    "5 LIBBY RD": {
+        "coder": "census",
+        "normalized_address": "5 LIBBY RD, NATICK, MA, 01760",
+        "lat": "42.275803",
+        "long": "-71.328597"
+    },
+    "15 EUCLID AVE": {
+        "coder": "census",
+        "normalized_address": "15 EUCLID AVE, NATICK, MA, 01760",
+        "lat": "42.307082",
+        "long": "-71.337610"
+    },
+    "133 HARTFORD ST ": {
+        "coder": "census",
+        "normalized_address": "133 HARTFORD ST, NATICK, MA, 01760",
+        "lat": "42.291563",
+        "long": "-71.390724"
+    },
+    "8 ARLINGTON CIR": {
+        "coder": "census",
+        "normalized_address": "8 ARLINGTON CIR, NATICK, MA, 01760",
+        "lat": "42.305728",
+        "long": "-71.339280"
+    },
+    "25 WASHINGTON ST ": {
+        "coder": "census",
+        "normalized_address": "25 WASHINGTON ST, NATICK, MA, 01760",
+        "lat": "42.285324",
+        "long": "-71.346353"
+    },
+    "[NAT 1452] TOBIN AFTERSCHOOL - 73 COTTAGE ST": {
+        "coder": "census",
+        "normalized_address": "73 COTTAGE ST, NATICK, MA, 01760",
+        "lat": "42.272677",
+        "long": "-71.345452"
+    },
+    "180 NORTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "180 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.298192",
+        "long": "-71.359351"
+    },
+    "120 CEDAR TER Apt. #A": {
+        "coder": "census",
+        "normalized_address": "120 CEDAR TER, NATICK, MA, 01760",
+        "lat": "42.273087",
+        "long": "-71.355588"
+    },
+    "DRIS CORPORATION - 16 TECH CIR": {
+        "coder": "census",
+        "normalized_address": "16 TECH CIR, NATICK, MA, 01760",
+        "lat": "42.313778",
+        "long": "-71.337926"
+    },
+    "4 TIBBETTS ST": {
+        "coder": "census",
+        "normalized_address": "4 TIBBETTS ST, NATICK, MA, 01760",
+        "lat": "42.286830",
+        "long": "-71.343055"
+    },
+    "3 BLUEBERRY HILL RD ": {
+        "coder": "census",
+        "normalized_address": "3 BLUEBERRY HILL RD, NATICK, MA, 01760",
+        "lat": "42.290799",
+        "long": "-71.393833"
+    },
+    "[NAT 25] RAMP FROM RT9 WEST TO NORTH MAIN ST SOUTH - RAMP - RT9 WB TO RT27 SB": {
+        "coder": "census",
+        "normalized_address": "9 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.286082",
+        "long": "-71.348580"
+    },
+    "11 STACEY ST": {
+        "coder": "census",
+        "normalized_address": "11 STACEY ST, NATICK, MA, 01760",
+        "lat": "42.281970",
+        "long": "-71.384545"
+    },
+    "[NAT 312] 42 EAST EVERGREEN RD - 42 EAST EVERGREEN RD": {
+        "coder": "census",
+        "normalized_address": "42 E EVERGREEN RD, NATICK, MA, 01760",
+        "lat": "42.305536",
+        "long": "-71.355811"
+    },
+    "[NAT 271] O B HILL TRUCKING & RIGGING COMPANY - 197 WEST CENTRAL ST": {
+        "coder": "census",
+        "normalized_address": "197 W CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.282015",
+        "long": "-71.389705"
+    },
+    "34 HIGH ST": {
+        "coder": "census",
+        "normalized_address": "34 HIGH ST, NATICK, MA, 01760",
+        "lat": "42.279475",
+        "long": "-71.353779"
+    },
+    "17 WALDEN DR": {
+        "coder": "census",
+        "normalized_address": "17 WALDEN DR, NATICK, MA, 01760",
+        "lat": "42.276787",
+        "long": "-71.387309"
+    },
+    "99 OAK ST": {
+        "coder": "census",
+        "normalized_address": "99 OAK ST, NATICK, MA, 01760",
+        "lat": "42.305492",
+        "long": "-71.332428"
+    },
+    "[NAT 396] AGOSTINOS - 23 WASHINGTON ST": {
+        "coder": "census",
+        "normalized_address": "23 WASHINGTON ST, NATICK, MA, 01760",
+        "lat": "42.285273",
+        "long": "-71.346337"
+    },
+    "17 VILLAGE ROCK LN Apt. #22": {
+        "coder": "census",
+        "normalized_address": "17 VILLAGE ROCK LN, NATICK, MA, 01760",
+        "lat": "42.278503",
+        "long": "-71.394579"
+    },
+    "[NAT 2553] ETHAN ALLEN - 321 SPEEN ST": {
+        "coder": "census",
+        "normalized_address": "321 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.301013",
+        "long": "-71.379943"
+    },
+    "37 BELMORE RD": {
+        "coder": "census",
+        "normalized_address": "37 BELMORE RD, NATICK, MA, 01760",
+        "lat": "42.285562",
+        "long": "-71.378400"
+    },
+    "4 WALDEN DR Apt. #19": {
+        "coder": "census",
+        "normalized_address": "4 WALDEN DR, NATICK, MA, 01760",
+        "lat": "42.276717",
+        "long": "-71.387681"
+    },
+    "[NAT 1860] ABERCROMBIE AND FITCH - 1245 WORCESTER ST Apt. #2066": {
+        "coder": "census",
+        "normalized_address": "1245 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299500",
+        "long": "-71.377749"
+    },
+    " 1 STONE TER": {
+        "coder": "census",
+        "normalized_address": "1 STONE TER, NATICK, MA, 01760",
+        "lat": "42.290905",
+        "long": "-71.395180"
+    },
+    "187 SPEEN ST ": {
+        "coder": "census",
+        "normalized_address": "187 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.288317",
+        "long": "-71.375243"
+    },
+    "130 SOUTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "130 S MAIN ST, NATICK, MA, 01760",
+        "lat": "42.275640",
+        "long": "-71.351636"
+    },
+    "131 SPEEN ST": {
+        "coder": "census",
+        "normalized_address": "131 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.280055",
+        "long": "-71.376182"
+    },
+    "31 SOUTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "31 S MAIN ST, NATICK, MA, 01760",
+        "lat": "42.282416",
+        "long": "-71.347340"
+    },
+    "[WEL] SHELL GAS STATION - 987 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "987 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299642",
+        "long": "-71.363702"
+    },
+    "8 FROST ST": {
+        "coder": "census",
+        "normalized_address": "8 FROST ST, NATICK, MA, 01760",
+        "lat": "42.323107",
+        "long": "-71.336168"
+    },
+    "[NAT 331] NATICK RADIATOR SERVICE INC - 18 SOUTH AVE": {
+        "coder": "census",
+        "normalized_address": "18 SOUTH AVE, NATICK, MA, 01760",
+        "lat": "42.285666",
+        "long": "-71.344361"
+    },
+    "[NAT 954] THE VERVE HOTEL - 1360 WORCESTER ST Apt. #624": {
+        "coder": "census",
+        "normalized_address": "1360 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.298777",
+        "long": "-71.391301"
+    },
+    "26 UNION ST": {
+        "coder": "census",
+        "normalized_address": "26 UNION ST, NATICK, MA, 01760",
+        "lat": "42.283671",
+        "long": "-71.337531"
+    },
+    "61 WEST CENTRAL ST": {
+        "coder": "census",
+        "normalized_address": "61 CENTRE ST, NATICK, MA, 01760",
+        "lat": "42.305279",
+        "long": "-71.347258"
+    },
+    "1 VILLAGE ROCK LN Apt. #5": {
+        "coder": "census",
+        "normalized_address": "1 VILLAGE ROCK LN, NATICK, MA, 01760",
+        "lat": "42.278263",
+        "long": "-71.393737"
+    },
+    "73 MILL ST ": {
+        "coder": "census",
+        "normalized_address": "73 MILL ST, NATICK, MA, 01760",
+        "lat": "42.284859",
+        "long": "-71.381432"
+    },
+    "218 HARTFORD ST": {
+        "coder": "census",
+        "normalized_address": "218 HARTFORD ST, NATICK, MA, 01760",
+        "lat": "42.292248",
+        "long": "-71.400938"
+    },
+    "[NAT 2052] KENDALL CROSSING APARTMENTS - 20 WOODBINE RD": {
+        "coder": "census",
+        "normalized_address": "20 WOODBINE RD, NATICK, MA, 01760",
+        "lat": "42.278666",
+        "long": "-71.388775"
+    },
+    "[NAT 3404] AVALON NATICK APARTMENTS - 1 CHRYSLER RD": {
+        "coder": "census",
+        "normalized_address": "1 CHRYSLER RD, NATICK, MA, 01760",
+        "lat": "42.305133",
+        "long": "-71.382036"
+    },
+    "67 BODEN LN ": {
+        "coder": "census",
+        "normalized_address": "67 BODEN LN, NATICK, MA, 01760",
+        "lat": "42.282786",
+        "long": "-71.391046"
+    },
+    "3 HUNTERS LN": {
+        "coder": "census",
+        "normalized_address": "3 HUNTERS LN, NATICK, MA, 01760",
+        "lat": "42.272960",
+        "long": "-71.352886"
+    },
+    "8 PINEHURST AVE": {
+        "coder": "census",
+        "normalized_address": "8 PINEHURST AVE, NATICK, MA, 01760",
+        "lat": "42.276487",
+        "long": "-71.378818"
+    },
+    "1 FAIRWAY CIR ": {
+        "coder": "census",
+        "normalized_address": "1 FAIRWAY CIR, NATICK, MA, 01760",
+        "lat": "42.292310",
+        "long": "-71.378086"
+    },
+    "47 VILLAGE BROOK LN Apt. #13": {
+        "coder": "census",
+        "normalized_address": "47 VILLAGE BROOK LN, NATICK, MA, 01760",
+        "lat": "42.277102",
+        "long": "-71.392442"
+    },
+    "85 HARTFORD ST": {
+        "coder": "census",
+        "normalized_address": "85 HARTFORD ST, NATICK, MA, 01760",
+        "lat": "42.293512",
+        "long": "-71.385102"
+    },
+    "[NAT 4101] BOSTON PIANO - 575 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "575 WORCESTER ST, WELLESLEY HILLS, MA, 02481",
+        "lat": "42.308812",
+        "long": "-71.285197"
+    },
+    "23 NORTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "23 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.286465",
+        "long": "-71.348973"
+    },
+    "[NAT 3147] LOUIS VUITTON - 1245 WORCESTER ST Apt. #3025": {
+        "coder": "census",
+        "normalized_address": "1245 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299500",
+        "long": "-71.377749"
+    },
+    "[NAT 1727] MASTER MECHANICS AUTOMOTIVE - 10 SOUTH AVE": {
+        "coder": "census",
+        "normalized_address": "10 SOUTH AVE, NATICK, MA, 01760",
+        "lat": "42.285331",
+        "long": "-71.347225"
+    },
+    "7 UNIVERSITY DR": {
+        "coder": "census",
+        "normalized_address": "7 UNIVERSITY DR, NATICK, MA, 01760",
+        "lat": "42.288584",
+        "long": "-71.329993"
+    },
+    "15 VILLAGE WAY Apt. #3": {
+        "coder": "census",
+        "normalized_address": "15 VILLAGE WAY, NATICK, MA, 01760",
+        "lat": "42.280352",
+        "long": "-71.390290"
+    },
+    "[NAT 3757] SUPERCUTS - 933 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "933 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299818",
+        "long": "-71.362312"
+    },
+    "1080 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "1080 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.298426",
+        "long": "-71.370126"
+    },
+    "21 LARKSPUR WAY Apt. #3": {
+        "coder": "census",
+        "normalized_address": "21 LARKSPUR WAY, NATICK, MA, 01760",
+        "lat": "42.278287",
+        "long": "-71.390537"
+    },
+    "[NAT 3233] ALLEN EDMUNDS - 1245 WORCESTER ST Apt. #3064": {
+        "coder": "census",
+        "normalized_address": "1245 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299500",
+        "long": "-71.377749"
+    },
+    "63 BEAVER DAM RD": {
+        "coder": "census",
+        "normalized_address": "63 BEAVERDAM RD, NATICK, MA, 01760",
+        "lat": "42.287367",
+        "long": "-71.380734"
+    },
+    "[NAT 1580] 15 BARNESDALE RD - 15 BARNESDALE RD": {
+        "coder": "census",
+        "normalized_address": "15 BARNESDALE RD, NATICK, MA, 01760",
+        "lat": "42.293366",
+        "long": "-71.380998"
+    },
+    "[NAT 1092] JOHNSON SCHOOL - 99 SOUTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "99 S MAIN ST, NATICK, MA, 01760",
+        "lat": "42.278201",
+        "long": "-71.349598"
+    },
+    "122 WEST CENTRAL ST": {
+        "coder": "census",
+        "normalized_address": "122 W CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.282869",
+        "long": "-71.364184"
+    },
+    "59 WESTLAKE RD": {
+        "coder": "census",
+        "normalized_address": "59 WESTLAKE RD, NATICK, MA, 01760",
+        "lat": "42.309819",
+        "long": "-71.359202"
+    },
+    "44 CURVE ST Apt. #1": {
+        "coder": "census",
+        "normalized_address": "44 CURVE ST, NATICK, MA, 01760",
+        "lat": "42.276618",
+        "long": "-71.356431"
+    },
+    "[NAT 1063] METROWEST MEDICAL CENTER - LEONARD MORSE HOSP - 67 UNION ST Apt. #433": {
+        "coder": "census",
+        "normalized_address": "67 UNION ST, NATICK, MA, 01760",
+        "lat": "42.280369",
+        "long": "-71.332476"
+    },
+    "[NAT 2068] FORMAN INDUSTRIES - 17 MERCER RD": {
+        "coder": "census",
+        "normalized_address": "17 MERCER RD, NATICK, MA, 01760",
+        "lat": "42.296692",
+        "long": "-71.390825"
+    },
+    "23 LAKEVIEW GARDENS Apt. #719": {
+        "coder": "census",
+        "normalized_address": "23 LAKEVIEW AVE, NATICK, MA, 01760",
+        "lat": "42.275260",
+        "long": "-71.369634"
+    },
+    "42 SECOND ST": {
+        "coder": "census",
+        "normalized_address": "42 2ND ST, NATICK, MA, 01760",
+        "lat": "42.294169",
+        "long": "-71.362306"
+    },
+    "[NAT 4169] LULULEMON - 1245 WORCESTER ST Apt. #4045": {
+        "coder": "census",
+        "normalized_address": "1245 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299500",
+        "long": "-71.377749"
+    },
+    "25 LAKEVIEW GARDENS Apt. #706": {
+        "coder": "census",
+        "normalized_address": "25 LAKEVIEW AVE, NATICK, MA, 01760",
+        "lat": "42.275004",
+        "long": "-71.369580"
+    },
+    "[NAT 3172] BERNARDI SERVICE AND STORAGE FACILITY - 9 COCHITUATE ST": {
+        "coder": "census",
+        "normalized_address": "9 COCHITUATE ST, NATICK, MA, 01760",
+        "lat": "42.285876",
+        "long": "-71.350949"
+    },
+    "[NAT 819] EZ MINI STORAGE - 336 SPEEN ST": {
+        "coder": "census",
+        "normalized_address": "336 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.300739",
+        "long": "-71.379942"
+    },
+    "[NAT 2893] 1336 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "1336 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.298917",
+        "long": "-71.387301"
+    },
+    "4 UNIVERSITY DR": {
+        "coder": "census",
+        "normalized_address": "4 UNIVERSITY DR, NATICK, MA, 01760",
+        "lat": "42.288747",
+        "long": "-71.329699"
+    },
+    "3 STETSON RD ": {
+        "coder": "census",
+        "normalized_address": "3 STETSON RD, NATICK, MA, 01760",
+        "lat": "42.295149",
+        "long": "-71.382457"
+    },
+    "[NAT 3022] 5 AZALEA CIR - 5 AZALEA CIR": {
+        "coder": "census",
+        "normalized_address": "5 AZALEA CIR, NATICK, MA, 01760",
+        "lat": "42.279340",
+        "long": "-71.329402"
+    },
+    "22 NOTTINGHAM DR": {
+        "coder": "census",
+        "normalized_address": "22 NOTTINGHAM DR, NATICK, MA, 01760",
+        "lat": "42.295916",
+        "long": "-71.378652"
+    },
+    "24 WATER ST Apt. #2": {
+        "coder": "census",
+        "normalized_address": "24 WATER ST, NATICK, MA, 01760",
+        "lat": "42.272784",
+        "long": "-71.311415"
+    },
+    "44 BENNETT ST": {
+        "coder": "census",
+        "normalized_address": "44 BENNETT ST, NATICK, MA, 01760",
+        "lat": "42.275346",
+        "long": "-71.354926"
+    },
+    "4 WHEELER LN": {
+        "coder": "census",
+        "normalized_address": "4 WHEELER LN, NATICK, MA, 01760",
+        "lat": "42.301640",
+        "long": "-71.349166"
+    },
+    "94 HARTFORD ST": {
+        "coder": "census",
+        "normalized_address": "94 HARTFORD ST, NATICK, MA, 01760",
+        "lat": "42.293366",
+        "long": "-71.385199"
+    },
+    "[NAT 27] RAMP FROM RT9 EAST TO NORTH MAIN ST SOUTH - RAMP - RT9 EB TO RT27 SB": {
+        "coder": "census",
+        "normalized_address": "9 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.286082",
+        "long": "-71.348580"
+    },
+    "50 HARTFORD ST": {
+        "coder": "census",
+        "normalized_address": "50 HARTFORD ST, NATICK, MA, 01760",
+        "lat": "42.295059",
+        "long": "-71.381678"
+    },
+    "84 SPEEN ST ": {
+        "coder": "census",
+        "normalized_address": "84 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.278217",
+        "long": "-71.376378"
+    },
+    "[NAT 3173] ZARA - 1245 WORCESTER ST Apt. #4072": {
+        "coder": "census",
+        "normalized_address": "1245 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299500",
+        "long": "-71.377749"
+    },
+    "78 SUMMER ST": {
+        "coder": "census",
+        "normalized_address": "78 SUMMER ST, NATICK, MA, 01760",
+        "lat": "42.284016",
+        "long": "-71.351217"
+    },
+    "151 HARTFORD ST": {
+        "coder": "census",
+        "normalized_address": "151 HARTFORD ST, NATICK, MA, 01760",
+        "lat": "42.290752",
+        "long": "-71.393243"
+    },
+    "[NAT 2985] FALCETTI PIANOS - 579 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "579 WORCESTER ST, WELLESLEY HILLS, MA, 02481",
+        "lat": "42.308761",
+        "long": "-71.285324"
+    },
+    "[NAT 955] DUNKIN DONUTS - 1362 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "1362 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.298771",
+        "long": "-71.391457"
+    },
+    "2 ROUNDWOOD RD ": {
+        "coder": "census",
+        "normalized_address": "2 ROUNDWOOD RD, NATICK, MA, 01760",
+        "lat": "42.296072",
+        "long": "-71.348004"
+    },
+    "107 SPEEN ST Apt. #A": {
+        "coder": "census",
+        "normalized_address": "107 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.279101",
+        "long": "-71.376252"
+    },
+    "[NAT 514] COOLIDGE GARDENS - 4 COTTAGE ST Apt. #11": {
+        "coder": "census",
+        "normalized_address": "4 COTTAGE ST, NATICK, MA, 01760",
+        "lat": "42.280473",
+        "long": "-71.347181"
+    },
+    "168 SPEEN ST ": {
+        "coder": "census",
+        "normalized_address": "168 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.287217",
+        "long": "-71.375267"
+    },
+    "176 NORTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "176 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.297990",
+        "long": "-71.359327"
+    },
+    "1 BEAR HILL RD ": {
+        "coder": "census",
+        "normalized_address": "1 BEAR HILL RD, NATICK, MA, 01760",
+        "lat": "42.272026",
+        "long": "-71.354649"
+    },
+    "[NAT 4233] TILLYS    SPACE 2148 - 1245 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "1245 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299500",
+        "long": "-71.377749"
+    },
+    "67 SUMMER ST": {
+        "coder": "census",
+        "normalized_address": "67 SUMMER ST, NATICK, MA, 01760",
+        "lat": "42.284048",
+        "long": "-71.351968"
+    },
+    "6 VILLAGE GREEN LN": {
+        "coder": "census",
+        "normalized_address": "6 VILLAGE GREEN LN, NATICK, MA, 01760",
+        "lat": "42.281135",
+        "long": "-71.391688"
+    },
+    "[NAT 3404] AVALON NATICK APARTMENTS - 1 CHRYSLER RD Apt. #904": {
+        "coder": "census",
+        "normalized_address": "1 CHRYSLER RD, NATICK, MA, 01760",
+        "lat": "42.305133",
+        "long": "-71.382036"
+    },
+    "[NAT 3893] MUTUAL ONE BANK - 49 MAIN ST": {
+        "coder": "census",
+        "normalized_address": "49 MAIN ST, NATICK, MA, 01760",
+        "lat": "42.285312",
+        "long": "-71.347748"
+    },
+    "5 COOLIDGE AVE ": {
+        "coder": "census",
+        "normalized_address": "5 COOLIDGE AVE, NATICK, MA, 01760",
+        "lat": "42.278354",
+        "long": "-71.346668"
+    },
+    "[NAT 355] SWEETWATERS COFFEE AND TEA - 19 SOUTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "19 S MAIN ST, NATICK, MA, 01760",
+        "lat": "42.282648",
+        "long": "-71.347329"
+    },
+    "53 WEST CENTRAL ST": {
+        "coder": "census",
+        "normalized_address": "53 W CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.283103",
+        "long": "-71.353018"
+    },
+    "43 POND ST": {
+        "coder": "census",
+        "normalized_address": "43 POND ST, NATICK, MA, 01760",
+        "lat": "42.282191",
+        "long": "-71.350813"
+    },
+    "158 EAST CENTRAL ST": {
+        "coder": "census",
+        "normalized_address": "158 E CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.288344",
+        "long": "-71.332171"
+    },
+    "[NAT 1018] 23 EAST EVERGREEN RD ": {
+        "coder": "census",
+        "normalized_address": "23 E EVERGREEN RD, NATICK, MA, 01760",
+        "lat": "42.307050",
+        "long": "-71.357931"
+    },
+    "[WAY] 344 COMMONWEALTH RD": {
+        "coder": "census",
+        "normalized_address": "344 COMMONWEALTH RD, WAYLAND, MA, 01778",
+        "lat": "42.323190",
+        "long": "-71.352021"
+    },
+    "[NAT 3004] 25 HARTFORD ST - 25 HARTFORD ST": {
+        "coder": "census",
+        "normalized_address": "25 HARTFORD ST, NATICK, MA, 01760",
+        "lat": "42.297037",
+        "long": "-71.378815"
+    },
+    "110 WILSON DR": {
+        "coder": "census",
+        "normalized_address": "110 WILSON DR, FRAMINGHAM, MA, 01702",
+        "lat": "42.285474",
+        "long": "-71.400634"
+    },
+    "1 KENDALL LN ": {
+        "coder": "census",
+        "normalized_address": "1 KENDALL LN, NATICK, MA, 01760",
+        "lat": "42.274467",
+        "long": "-71.393539"
+    },
+    "[NAT 1639] 84 PLEASANT ST": {
+        "coder": "census",
+        "normalized_address": "84 PLEASANT ST, NATICK, MA, 01760",
+        "lat": "42.298465",
+        "long": "-71.356095"
+    },
+    "290 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "290 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.301963",
+        "long": "-71.340499"
+    },
+    "WINSOR - 1245 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "1245 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299500",
+        "long": "-71.377749"
+    },
+    "52 WOODLAND ST": {
+        "coder": "census",
+        "normalized_address": "52 WOODLAND ST, NATICK, MA, 01760",
+        "lat": "42.273018",
+        "long": "-71.338960"
+    },
+    "17 COOPER RD": {
+        "coder": "census",
+        "normalized_address": "17 COOPER RD, NATICK, MA, 01760",
+        "lat": "42.302797",
+        "long": "-71.330356"
+    },
+    "161 MILL ST ": {
+        "coder": "census",
+        "normalized_address": "161 MILL ST, NATICK, MA, 01760",
+        "lat": "42.288710",
+        "long": "-71.384402"
+    },
+    "[NAT 956] FIRESTONE TIRE SERVICE - 1362 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "1362 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.298771",
+        "long": "-71.391457"
+    },
+    "125 HARTFORD ST": {
+        "coder": "census",
+        "normalized_address": "125 HARTFORD ST, NATICK, MA, 01760",
+        "lat": "42.291859",
+        "long": "-71.389796"
+    },
+    "5 PLAIN ST ": {
+        "coder": "census",
+        "normalized_address": "5 PLAIN ST, NATICK, MA, 01760",
+        "lat": "42.282379",
+        "long": "-71.348869"
+    },
+    "6 EMERSON ST": {
+        "coder": "census",
+        "normalized_address": "6 EMERSON RD, NATICK, MA, 01760",
+        "lat": "42.305667",
+        "long": "-71.351544"
+    },
+    "1 CHARLES ST ": {
+        "coder": "census",
+        "normalized_address": "1 CHARLES ST, NATICK, MA, 01760",
+        "lat": "42.289203",
+        "long": "-71.350804"
+    },
+    "50 UNION ST": {
+        "coder": "census",
+        "normalized_address": "50 UNION ST, NATICK, MA, 01760",
+        "lat": "42.282068",
+        "long": "-71.334670"
+    },
+    "87 HARTFORD ST": {
+        "coder": "census",
+        "normalized_address": "87 HARTFORD ST, NATICK, MA, 01760",
+        "lat": "42.293475",
+        "long": "-71.385249"
+    },
+    "C-DECK - 1245 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "1245 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299500",
+        "long": "-71.377749"
+    },
+    "141 NORTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "141 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.294501",
+        "long": "-71.357956"
+    },
+    "44 EAST CENTRAL ST ": {
+        "coder": "census",
+        "normalized_address": "44 E CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.284610",
+        "long": "-71.343196"
+    },
+    "[NAT 703] BURLINGTON COAT FACTORY - 321 SPEEN ST": {
+        "coder": "census",
+        "normalized_address": "321 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.301013",
+        "long": "-71.379943"
+    },
+    "[NAT 3236] WALNUT HILL SCHOOL / BISHOP HALL - 81 WALNUT ST": {
+        "coder": "census",
+        "normalized_address": "81 WALNUT ST, NATICK, MA, 01760",
+        "lat": "42.290503",
+        "long": "-71.348200"
+    },
+    "[NAT 1881] CALIFORNIA PIZZA KITCHEN - 1245 WORCESTER ST Apt. #1092": {
+        "coder": "census",
+        "normalized_address": "1245 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299500",
+        "long": "-71.377749"
+    },
+    "63 SPEEN ST ": {
+        "coder": "census",
+        "normalized_address": "63 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.275927",
+        "long": "-71.377395"
+    },
+    "2 DOTTIES CT": {
+        "coder": "census",
+        "normalized_address": "2 DOTTIES CT, NATICK, MA, 01760",
+        "lat": "42.314551",
+        "long": "-71.356665"
+    },
+    "66 POND ST": {
+        "coder": "census",
+        "normalized_address": "66 POND ST, NATICK, MA, 01760",
+        "lat": "42.281502",
+        "long": "-71.352613"
+    },
+    "[NAT 2643] STICKLEY FURNITURE - 323 SPEEN ST": {
+        "coder": "census",
+        "normalized_address": "323 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.301016",
+        "long": "-71.379945"
+    },
+    "165 HARTFORD ST": {
+        "coder": "census",
+        "normalized_address": "165 HARTFORD ST, NATICK, MA, 01760",
+        "lat": "42.291059",
+        "long": "-71.396165"
+    },
+    "43 NORTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "43 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.287916",
+        "long": "-71.349934"
+    },
+    "[NAT 436] 43 MAIN ST": {
+        "coder": "census",
+        "normalized_address": "43 MAIN ST, NATICK, MA, 01760",
+        "lat": "42.285301",
+        "long": "-71.347743"
+    },
+    "13 POSSUM HOLLOW LN": {
+        "coder": "census",
+        "normalized_address": "13 POSSUM HOLLOW LN, NATICK, MA, 01760",
+        "lat": "42.294161",
+        "long": "-71.373584"
+    },
+    "721 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "721 WORCESTER ST, WELLESLEY HILLS, MA, 02481",
+        "lat": "42.306036",
+        "long": "-71.299174"
+    },
+    "[NAT 1513] 148 MILL ST - 148 MILL ST": {
+        "coder": "census",
+        "normalized_address": "148 MILL ST, NATICK, MA, 01760",
+        "lat": "42.287773",
+        "long": "-71.383251"
+    },
+    "62 HARTFORD ST": {
+        "coder": "census",
+        "normalized_address": "62 HARTFORD ST, FRAMINGHAM, MA, 01702",
+        "lat": "42.289449",
+        "long": "-71.407687"
+    },
+    "304 WEST CENTRAL ST": {
+        "coder": "census",
+        "normalized_address": "304 W CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.281054",
+        "long": "-71.397012"
+    },
+    "10 GRANT ST Apt. #2": {
+        "coder": "census",
+        "normalized_address": "10 GRANT ST, NATICK, MA, 01760",
+        "lat": "42.284582",
+        "long": "-71.341810"
+    },
+    "4 WETHERSFIELD RD ": {
+        "coder": "census",
+        "normalized_address": "4 WETHERSFIELD RD, NATICK, MA, 01760",
+        "lat": "42.302347",
+        "long": "-71.352388"
+    },
+    "[NAT 3364] PANERA BREAD - 841 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "841 WORCESTER ST, WELLESLEY HILLS, MA, 02481",
+        "lat": "42.305605",
+        "long": "-71.311290"
+    },
+    "[NAT 2157] COOLIDGE FIELD - 5 CHESTER ST": {
+        "coder": "census",
+        "normalized_address": "5 CHESTER ST, NATICK, MA, 01760",
+        "lat": "42.280438",
+        "long": "-71.343831"
+    },
+    "[NAT 1502] 41 HOPEWELL FARM RD - 41 HOPEWELL FARM RD": {
+        "coder": "census",
+        "normalized_address": "41 HOPEWELL FARM RD, NATICK, MA, 01760",
+        "lat": "42.260170",
+        "long": "-71.347165"
+    },
+    "21 LAKEVIEW GARDENS Apt. #914": {
+        "coder": "census",
+        "normalized_address": "21 LAKEVIEW AVE, NATICK, MA, 01760",
+        "lat": "42.275519",
+        "long": "-71.369695"
+    },
+    "[NAT 1772] NATICK COMMON - 1 EAST CENTRAL ST ": {
+        "coder": "census",
+        "normalized_address": "1 E CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.284032",
+        "long": "-71.345567"
+    },
+    "26 ELMWOOD AVE": {
+        "coder": "census",
+        "normalized_address": "26 ELMWOOD AVE, NATICK, MA, 01760",
+        "lat": "42.276471",
+        "long": "-71.348155"
+    },
+    "250 BACON ST": {
+        "coder": "census",
+        "normalized_address": "250 BACON ST, NATICK, MA, 01760",
+        "lat": "42.297165",
+        "long": "-71.356701"
+    },
+    "[NAT 3153] ANTHROPOLOGIE - 1245 WORCESTER ST Apt. #4012": {
+        "coder": "census",
+        "normalized_address": "1245 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299500",
+        "long": "-71.377749"
+    },
+    "6 PORTER RD": {
+        "coder": "census",
+        "normalized_address": "6 PORTER RD, NATICK, MA, 01760",
+        "lat": "42.291962",
+        "long": "-71.391470"
+    },
+    "[NAT 3971] COMMON STREET COMMUNITY CHURCH - 13 COMMON ST": {
+        "coder": "census",
+        "normalized_address": "13 COMMON ST, NATICK, MA, 01760",
+        "lat": "42.282888",
+        "long": "-71.345859"
+    },
+    "[NAT 3731] MERCEDES BENZ OF NATICK - 253 NORTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "253 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.307387",
+        "long": "-71.361712"
+    },
+    "[NAT 3393] 1 LELAND RD - 1 LELAND RD": {
+        "coder": "census",
+        "normalized_address": "1 LELAND RD, NATICK, MA, 01760",
+        "lat": "42.305407",
+        "long": "-71.336983"
+    },
+    "[NAT 2933] LZ-7 NATICK (MURPHY FIELD) - 156 NORTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "156 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.296528",
+        "long": "-71.358975"
+    },
+    "82 SPEEN ST ": {
+        "coder": "census",
+        "normalized_address": "82 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.278118",
+        "long": "-71.376379"
+    },
+    "[NAT 4013] MITCHEL GOLD & BOB WILLIAMS - 625 WORCESTER ST Apt. #ST": {
+        "coder": "census",
+        "normalized_address": "625 WORCESTER ST, WELLESLEY HILLS, MA, 02481",
+        "lat": "42.307026",
+        "long": "-71.292761"
+    },
+    "[NAT 2212] LIBERTY PIZZA OF NATICK - 2 MILL ST": {
+        "coder": "census",
+        "normalized_address": "2 MILL ST, NATICK, MA, 01760",
+        "lat": "42.278133",
+        "long": "-71.376408"
+    },
+    "2 POST OAK LN Apt. #6": {
+        "coder": "census",
+        "normalized_address": "2 POST OAK LN, NATICK, MA, 01760",
+        "lat": "42.277821",
+        "long": "-71.386779"
+    },
+    "[NAT 3640] 538 WORCESTER ST ": {
+        "coder": "census",
+        "normalized_address": "538 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.301328",
+        "long": "-71.346473"
+    },
+    "155 MILL ST": {
+        "coder": "census",
+        "normalized_address": "155 MILL ST, NATICK, MA, 01760",
+        "lat": "42.288524",
+        "long": "-71.384142"
+    },
+    "3 SHERMAN TER": {
+        "coder": "census",
+        "normalized_address": "3 SHERMAN TER, NATICK, MA, 01760",
+        "lat": "42.282740",
+        "long": "-71.340065"
+    },
+    "182 PINE ST ": {
+        "coder": "census",
+        "normalized_address": "182 PINE ST, NATICK, MA, 01760",
+        "lat": "42.315651",
+        "long": "-71.341296"
+    },
+    "3 ALLEN CT": {
+        "coder": "census",
+        "normalized_address": "3 ALLEN CT, NATICK, MA, 01760",
+        "lat": "42.286693",
+        "long": "-71.347818"
+    },
+    "[NAT 3396] 2 AUSTIN WAY - 2 AUSTIN WAY": {
+        "coder": "census",
+        "normalized_address": "2 AUSTIN WAY, NATICK, MA, 01760",
+        "lat": "42.293280",
+        "long": "-71.340180"
+    },
+    "BOOT BARN - 321 SPEEN ST": {
+        "coder": "census",
+        "normalized_address": "321 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.301013",
+        "long": "-71.379943"
+    },
+    "[NAT 169] 25 IRVING RD - 25 IRVING RD": {
+        "coder": "census",
+        "normalized_address": "25 IRVING RD, NATICK, MA, 01760",
+        "lat": "42.308021",
+        "long": "-71.348497"
+    },
+    "325 SPEEN ST Apt. #614": {
+        "coder": "census",
+        "normalized_address": "325 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.301020",
+        "long": "-71.379948"
+    },
+    "[NAT 79] 262 SPEEN ST ": {
+        "coder": "census",
+        "normalized_address": "262 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.297144",
+        "long": "-71.377679"
+    },
+    "11 VILLAGE WAY Apt. #6": {
+        "coder": "census",
+        "normalized_address": "11 VILLAGE WAY, NATICK, MA, 01760",
+        "lat": "42.280407",
+        "long": "-71.390228"
+    },
+    "[NAT 3116] BRIGHT HORIZONS AT NATICK - 313 SPEEN ST": {
+        "coder": "census",
+        "normalized_address": "313 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.300998",
+        "long": "-71.379934"
+    },
+    "164 SPEEN ST": {
+        "coder": "census",
+        "normalized_address": "164 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.286542",
+        "long": "-71.375307"
+    },
+    "260 SPEEN ST": {
+        "coder": "census",
+        "normalized_address": "260 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.297136",
+        "long": "-71.377671"
+    },
+    "6 VILLAGE GREEN LN Apt. #19": {
+        "coder": "census",
+        "normalized_address": "6 VILLAGE GREEN LN, NATICK, MA, 01760",
+        "lat": "42.281135",
+        "long": "-71.391688"
+    },
+    "[NAT 626] DEBCO MACHINE - 85 NORTH AVE": {
+        "coder": "census",
+        "normalized_address": "85 NORTH AVE, NATICK, MA, 01760",
+        "lat": "42.286679",
+        "long": "-71.343064"
+    },
+    "[NAT 4385] 16 CURVE ST 3 FAMILY - 16 CURVE ST Apt. #3": {
+        "coder": "census",
+        "normalized_address": "16 CURVE ST, NATICK, MA, 01760",
+        "lat": "42.277035",
+        "long": "-71.352335"
+    },
+    "53 ELIOT HILL RD": {
+        "coder": "census",
+        "normalized_address": "53 ELIOT HILL RD, NATICK, MA, 01760",
+        "lat": "42.260857",
+        "long": "-71.337160"
+    },
+    "23 MAIN ST": {
+        "coder": "census",
+        "normalized_address": "23 MAIN ST, NATICK, MA, 01760",
+        "lat": "42.284542",
+        "long": "-71.347525"
+    },
+    "122 OAK ST": {
+        "coder": "census",
+        "normalized_address": "122 OAK ST, NATICK, MA, 01760",
+        "lat": "42.308602",
+        "long": "-71.333447"
+    },
+    "PRECOR HOME FITNESS - 1400 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "1400 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.298767",
+        "long": "-71.391565"
+    },
+    "1 MAINSTONE RD ": {
+        "coder": "census",
+        "normalized_address": "1 MAINSTONE RD, WAYLAND, MA, 01778",
+        "lat": "42.329661",
+        "long": "-71.330200"
+    },
+    "41 SPEEN ST": {
+        "coder": "census",
+        "normalized_address": "41 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.274000",
+        "long": "-71.378790"
+    },
+    "2 VILLAGE HILL LN Apt. #4": {
+        "coder": "census",
+        "normalized_address": "2 VILLAGE HILL LN, NATICK, MA, 01760",
+        "lat": "42.277677",
+        "long": "-71.393793"
+    },
+    "10 VILLAGE GREEN LN": {
+        "coder": "census",
+        "normalized_address": "10 VILLAGE GREEN LN, NATICK, MA, 01760",
+        "lat": "42.281097",
+        "long": "-71.391754"
+    },
+    "[NAT 2519] ATTYS HORNUNG & SIMEONE - 5 COMMONWEALTH WEST RD": {
+        "coder": "census",
+        "normalized_address": "5 COMMONWEALTH RD, NATICK, MA, 01760",
+        "lat": "42.308705",
+        "long": "-71.382072"
+    },
+    "33 GLEN ST ": {
+        "coder": "census",
+        "normalized_address": "33 GLEN ST, NATICK, MA, 01760",
+        "lat": "42.267106",
+        "long": "-71.315520"
+    },
+    "[NAT 1620] 179 UNION ST - 179 UNION ST": {
+        "coder": "census",
+        "normalized_address": "179 UNION ST, NATICK, MA, 01760",
+        "lat": "42.275021",
+        "long": "-71.319913"
+    },
+    "71 GLEN ST ": {
+        "coder": "census",
+        "normalized_address": "71 GLEN ST, NATICK, MA, 01760",
+        "lat": "42.263186",
+        "long": "-71.315526"
+    },
+    "[NAT 2205] MORSE INSTITUTE LIBRARY - 14 EAST CENTRAL ST": {
+        "coder": "census",
+        "normalized_address": "14 E CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.284228",
+        "long": "-71.345215"
+    },
+    "[NAT 4199] PET SUPPLIES PLUS - 219 NORTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "219 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.303076",
+        "long": "-71.361265"
+    },
+    "61 RATHBUN RD": {
+        "coder": "census",
+        "normalized_address": "61 RATHBUN RD, NATICK, MA, 01760",
+        "lat": "42.314676",
+        "long": "-71.332173"
+    },
+    "161 SOUTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "161 S MAIN ST, NATICK, MA, 01760",
+        "lat": "42.272590",
+        "long": "-71.354194"
+    },
+    "164 WEST CENTRAL ST Apt. #4": {
+        "coder": "census",
+        "normalized_address": "164 W CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.282470",
+        "long": "-71.379061"
+    },
+    "[NAT 2767] 1 BARNESDALE RD - 1 BARNESDALE RD": {
+        "coder": "census",
+        "normalized_address": "1 BARNESDALE RD, NATICK, MA, 01760",
+        "lat": "42.295216",
+        "long": "-71.380651"
+    },
+    "[NAT 1198] COCHITUATE STATE PARK - 11 COMMONWEALTH WEST RD": {
+        "coder": "census",
+        "normalized_address": "11 COMMONWEALTH RD, NATICK, MA, 01760",
+        "lat": "42.308737",
+        "long": "-71.381834"
+    },
+    "[NAT 1374] BOX 225 - 625 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "625 WORCESTER ST, WELLESLEY HILLS, MA, 02481",
+        "lat": "42.307026",
+        "long": "-71.292761"
+    },
+    "11 OVERLOOK RD": {
+        "coder": "census",
+        "normalized_address": "11 OVERLOOK RD, NATICK, MA, 01760",
+        "lat": "42.299267",
+        "long": "-71.325323"
+    },
+    "16 BENNETT ST": {
+        "coder": "census",
+        "normalized_address": "16 BENNETT ST, NATICK, MA, 01760",
+        "lat": "42.275727",
+        "long": "-71.353421"
+    },
+    "6 POST OAK LN Apt. #3": {
+        "coder": "census",
+        "normalized_address": "6 POST OAK LN, NATICK, MA, 01760",
+        "lat": "42.277139",
+        "long": "-71.386097"
+    },
+    "29 CURTIS RD": {
+        "coder": "census",
+        "normalized_address": "29 CURTIS RD, NATICK, MA, 01760",
+        "lat": "42.289042",
+        "long": "-71.388670"
+    },
+    "[NAT 923] WALNUT HILL SCHOOL/ HIGHLAND BLDG - 12 HIGHLAND ST": {
+        "coder": "census",
+        "normalized_address": "12 HIGHLAND ST, NATICK, MA, 01760",
+        "lat": "42.290923",
+        "long": "-71.345019"
+    },
+    "[NAT 534] BELKIN LOOKOUT FARM TAP ROOM - 89 PLEASANT ST": {
+        "coder": "census",
+        "normalized_address": "89 PLEASANT ST, NATICK, MA, 01760",
+        "lat": "42.298352",
+        "long": "-71.356035"
+    },
+    " NATICK COLLECTION - 1245 WORCESTER ST Apt. #1000": {
+        "coder": "census",
+        "normalized_address": "1245 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299500",
+        "long": "-71.377749"
+    },
+    "[NAT 998] FIRST CONGREGATIONAL CHURCH NATICK - 2 EAST CENTRAL ST": {
+        "coder": "census",
+        "normalized_address": "2 E CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.283851",
+        "long": "-71.347217"
+    },
+    "[NAT 1588] TRANSTECH - 16 TECH CIR": {
+        "coder": "census",
+        "normalized_address": "16 TECH CIR, NATICK, MA, 01760",
+        "lat": "42.313778",
+        "long": "-71.337926"
+    },
+    "[NAT 442] DPW COMPLEX - 75 WEST ST": {
+        "coder": "census",
+        "normalized_address": "75 WEST ST, NATICK, MA, 01760",
+        "lat": "42.273104",
+        "long": "-71.362419"
+    },
+    "[NAT 1543] RECYCLE CENTER - 21 WEST ST": {
+        "coder": "census",
+        "normalized_address": "21 WEST ST, NATICK, MA, 01760",
+        "lat": "42.276810",
+        "long": "-71.359370"
+    },
+    "4 CHRYSLER RD ": {
+        "coder": "census",
+        "normalized_address": "4 CHRYSLER RD, NATICK, MA, 01760",
+        "lat": "42.305260",
+        "long": "-71.382022"
+    },
+    "10 SQUIRE CT Apt. #8": {
+        "coder": "census",
+        "normalized_address": "10 SQUIRE CT, NATICK, MA, 01760",
+        "lat": "42.276418",
+        "long": "-71.388568"
+    },
+    "DRIVEWAY ON SAWIN - 96 NORTH AVE": {
+        "coder": "census",
+        "normalized_address": "96 NORTH AVE, NATICK, MA, 01760",
+        "lat": "42.287066",
+        "long": "-71.341685"
+    },
+    "[NAT 617] CENTRAL AUTO PARTS - 327 WEST CENTRAL ST": {
+        "coder": "census",
+        "normalized_address": "327 W CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.281736",
+        "long": "-71.394075"
+    },
+    "15 CHURCH ST Apt. #8": {
+        "coder": "census",
+        "normalized_address": "15 CHURCH ST, NATICK, MA, 01760",
+        "lat": "42.282397",
+        "long": "-71.345303"
+    },
+    "39 NORTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "39 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.287530",
+        "long": "-71.349709"
+    },
+    "[NAT 3086] CHAMPS - 1245 WORCESTER ST Apt. #1010": {
+        "coder": "census",
+        "normalized_address": "1245 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299500",
+        "long": "-71.377749"
+    },
+    "19 WHITRIDGE RD": {
+        "coder": "census",
+        "normalized_address": "19 WHITRIDGE RD, NATICK, MA, 01760",
+        "lat": "42.258866",
+        "long": "-71.340046"
+    },
+    "146 MILL ST": {
+        "coder": "census",
+        "normalized_address": "146 MILL ST, NATICK, MA, 01760",
+        "lat": "42.287498",
+        "long": "-71.382884"
+    },
+    "IMMERSIVE GAMEBOX - 1245 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "1245 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299500",
+        "long": "-71.377749"
+    },
+    "[NAT 1511] MONTICELLO MOTEL - 1446 WORCESTER ST Apt. #123": {
+        "coder": "census",
+        "normalized_address": "1446 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.298763",
+        "long": "-71.391695"
+    },
+    "233 WEST CENTRAL ST": {
+        "coder": "census",
+        "normalized_address": "233 W CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.281982",
+        "long": "-71.390307"
+    },
+    "[NAT 1772] NATICK COMMON - 1 EAST CENTRAL ST": {
+        "coder": "census",
+        "normalized_address": "1 E CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.284032",
+        "long": "-71.345567"
+    },
+    "17 COACHMAN LN": {
+        "coder": "census",
+        "normalized_address": "17 COACHMAN LN, NATICK, MA, 01760",
+        "lat": "42.293011",
+        "long": "-71.395671"
+    },
+    "[WAY] 38 COCHITUATE RD": {
+        "coder": "census",
+        "normalized_address": "38 COCHITUATE ST, NATICK, MA, 01760",
+        "lat": "42.285653",
+        "long": "-71.351890"
+    },
+    "[NAT 291] STONEGATE - 235 WEST CENTRAL ST Apt. #201": {
+        "coder": "census",
+        "normalized_address": "235 W CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.281981",
+        "long": "-71.390340"
+    },
+    "96 WILSON DR": {
+        "coder": "census",
+        "normalized_address": "96 WILSON ST, NATICK, MA, 01760",
+        "lat": "42.282518",
+        "long": "-71.342250"
+    },
+    "[NAT 1482] NATICK AUTO CLINIC INC - 193 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "193 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.303248",
+        "long": "-71.333720"
+    },
+    "10 WHITTIER RD": {
+        "coder": "census",
+        "normalized_address": "10 WHITTIER RD, NATICK, MA, 01760",
+        "lat": "42.305020",
+        "long": "-71.330635"
+    },
+    "16 AVON ST": {
+        "coder": "census",
+        "normalized_address": "16 AVON ST, NATICK, MA, 01760",
+        "lat": "42.281522",
+        "long": "-71.342961"
+    },
+    "6 AVON ST": {
+        "coder": "census",
+        "normalized_address": "6 AVON ST, NATICK, MA, 01760",
+        "lat": "42.281478",
+        "long": "-71.343266"
+    },
+    "287 WEST CENTRAL ST": {
+        "coder": "census",
+        "normalized_address": "287 W CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.281790",
+        "long": "-71.393223"
+    },
+    "3 TECH CIR ": {
+        "coder": "census",
+        "normalized_address": "3 TECH CIR, NATICK, MA, 01760",
+        "lat": "42.313357",
+        "long": "-71.337890"
+    },
+    "25 UNION ST ": {
+        "coder": "census",
+        "normalized_address": "25 UNION ST, NATICK, MA, 01760",
+        "lat": "42.283600",
+        "long": "-71.337824"
+    },
+    "109 PLEASANT ST": {
+        "coder": "census",
+        "normalized_address": "109 PLEASANT ST S, NATICK, MA, 01760",
+        "lat": "42.262452",
+        "long": "-71.307007"
+    },
+    "184 ELIOT ST ": {
+        "coder": "census",
+        "normalized_address": "184 ELIOT ST, NATICK, MA, 01760",
+        "lat": "42.262297",
+        "long": "-71.327001"
+    },
+    "18 HARVARD ST": {
+        "coder": "census",
+        "normalized_address": "18 HARVARD ST, NATICK, MA, 01760",
+        "lat": "42.287813",
+        "long": "-71.344682"
+    },
+    "15 SCHOOL STREET EXT": {
+        "coder": "census",
+        "normalized_address": "15 SCHOOL ST, NATICK, MA, 01760",
+        "lat": "42.282086",
+        "long": "-71.346371"
+    },
+    "152 CEDAR TER Apt. #A": {
+        "coder": "census",
+        "normalized_address": "152 CEDAR TER, NATICK, MA, 01760",
+        "lat": "42.273193",
+        "long": "-71.355647"
+    },
+    "20 RUTLEDGE RD": {
+        "coder": "census",
+        "normalized_address": "20 RUTLEDGE RD, NATICK, MA, 01760",
+        "lat": "42.304066",
+        "long": "-71.358180"
+    },
+    "26 RIDGE AVE": {
+        "coder": "census",
+        "normalized_address": "26 RIDGE AVE, NATICK, MA, 01760",
+        "lat": "42.296094",
+        "long": "-71.372613"
+    },
+    "13 LAMPLIGHT CIR": {
+        "coder": "census",
+        "normalized_address": "13 LAMPLIGHT CIR, NATICK, MA, 01760",
+        "lat": "42.293429",
+        "long": "-71.398893"
+    },
+    "HAROLD YOUNG CO - 3 TECH CIR": {
+        "coder": "census",
+        "normalized_address": "3 TECH CIR, NATICK, MA, 01760",
+        "lat": "42.313357",
+        "long": "-71.337890"
+    },
+    "4 FISHER ST": {
+        "coder": "census",
+        "normalized_address": "4 FISHER ST, NATICK, MA, 01760",
+        "lat": "42.293824",
+        "long": "-71.358230"
+    },
+    "1 CENTRE ST ": {
+        "coder": "census",
+        "normalized_address": "1 CENTRE ST, NATICK, MA, 01760",
+        "lat": "42.301734",
+        "long": "-71.344706"
+    },
+    "16 MAINE AVE": {
+        "coder": "census",
+        "normalized_address": "16 MAINE AVE, NATICK, MA, 01760",
+        "lat": "42.302279",
+        "long": "-71.335865"
+    },
+    "4 BLUEBERRY HILL RD": {
+        "coder": "census",
+        "normalized_address": "4 BLUEBERRY HILL RD, NATICK, MA, 01760",
+        "lat": "42.290806",
+        "long": "-71.393988"
+    },
+    "[NAT 4350] CLINCHY RESIDENCE - 25 POND ST Apt. #2": {
+        "coder": "census",
+        "normalized_address": "25 POND ST, NATICK, MA, 01760",
+        "lat": "42.282824",
+        "long": "-71.348904"
+    },
+    "10 PURINGTON AVE": {
+        "coder": "census",
+        "normalized_address": "10 PURINGTON AVE, NATICK, MA, 01760",
+        "lat": "42.294944",
+        "long": "-71.375297"
+    },
+    "[NAT 3751] SUPERLOGICS - 9 MERCER RD": {
+        "coder": "census",
+        "normalized_address": "9 MERCER RD, NATICK, MA, 01760",
+        "lat": "42.296700",
+        "long": "-71.390478"
+    },
+    "9 BLOSSOM CIR": {
+        "coder": "census",
+        "normalized_address": "9 BLOSSOM CIR, NATICK, MA, 01760",
+        "lat": "42.305250",
+        "long": "-71.359542"
+    },
+    "321 SPEEN ST ": {
+        "coder": "census",
+        "normalized_address": "321 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.301013",
+        "long": "-71.379943"
+    },
+    "18 LAKEVIEW GARDENS Apt. #803": {
+        "coder": "census",
+        "normalized_address": "18 LAKEVIEW AVE, NATICK, MA, 01760",
+        "lat": "42.275668",
+        "long": "-71.369573"
+    },
+    "[NAT 197] 8 WESTVIEW AVE - 8 WESTVIEW AVE": {
+        "coder": "census",
+        "normalized_address": "8 WESTVIEW AVE, NATICK, MA, 01760",
+        "lat": "42.283557",
+        "long": "-71.339562"
+    },
+    "50 SOUTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "50 S MAIN ST, NATICK, MA, 01760",
+        "lat": "42.282020",
+        "long": "-71.347180"
+    },
+    " 1298 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "1298 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.298923",
+        "long": "-71.387223"
+    },
+    "[NAT 3928] ZYNO MEDICAL - 177 PINE ST": {
+        "coder": "census",
+        "normalized_address": "177 PINE ST, NATICK, MA, 01760",
+        "lat": "42.315295",
+        "long": "-71.343138"
+    },
+    "315 SPEEN ST": {
+        "coder": "census",
+        "normalized_address": "315 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.301001",
+        "long": "-71.379936"
+    },
+    "4 SHERMAN TER": {
+        "coder": "census",
+        "normalized_address": "4 SHERMAN TER, NATICK, MA, 01760",
+        "lat": "42.282783",
+        "long": "-71.339922"
+    },
+    "2 MILK ST": {
+        "coder": "census",
+        "normalized_address": "2 MILK ST, NATICK, MA, 01760",
+        "lat": "42.283532",
+        "long": "-71.337420"
+    },
+    "220 NORTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "220 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.304181",
+        "long": "-71.361611"
+    },
+    "12 BURNING TREE RD": {
+        "coder": "census",
+        "normalized_address": "12 BURNING TREE RD, NATICK, MA, 01760",
+        "lat": "42.284217",
+        "long": "-71.383116"
+    },
+    "43 HARTFORD ST ": {
+        "coder": "census",
+        "normalized_address": "43 HARTFORD ST, NATICK, MA, 01760",
+        "lat": "42.295886",
+        "long": "-71.380538"
+    },
+    "[NAT 1027] BRANDON SCHOOL/HOUSE 4 - 27 WINTER ST": {
+        "coder": "census",
+        "normalized_address": "27 WINTER ST, WAYLAND, MA, 01778",
+        "lat": "42.319975",
+        "long": "-71.362971"
+    },
+    "18 FARWELL ST": {
+        "coder": "census",
+        "normalized_address": "18 FARWELL ST, NATICK, MA, 01760",
+        "lat": "42.273580",
+        "long": "-71.346843"
+    },
+    "[NAT 4164] DUNKIN DONUTS - 223 NORTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "223 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.303119",
+        "long": "-71.361275"
+    },
+    "[NAT 1274] 164 MILL ST": {
+        "coder": "census",
+        "normalized_address": "164 MILL ST, NATICK, MA, 01760",
+        "lat": "42.289061",
+        "long": "-71.385185"
+    },
+    "41 HARTFORD ST": {
+        "coder": "census",
+        "normalized_address": "41 HARTFORD ST, NATICK, MA, 01760",
+        "lat": "42.296349",
+        "long": "-71.379810"
+    },
+    "148 HARTFORD ST ": {
+        "coder": "census",
+        "normalized_address": "148 HARTFORD ST, NATICK, MA, 01760",
+        "lat": "42.290672",
+        "long": "-71.392931"
+    },
+    "152 MILL ST": {
+        "coder": "census",
+        "normalized_address": "152 MILL ST, NATICK, MA, 01760",
+        "lat": "42.288300",
+        "long": "-71.384046"
+    },
+    "10 MORNINGSIDE AVE": {
+        "coder": "census",
+        "normalized_address": "10 MORNINGSIDE AVE, NATICK, MA, 01760",
+        "lat": "42.271259",
+        "long": "-71.339776"
+    },
+    "[NAT 30] SHERWOOD MORTGAGE - 264 NORTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "264 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.307221",
+        "long": "-71.361863"
+    },
+    "235 WEST CENTRAL ST": {
+        "coder": "census",
+        "normalized_address": "235 W CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.281981",
+        "long": "-71.390340"
+    },
+    "8 EVERGREEN RD ": {
+        "coder": "census",
+        "normalized_address": "8 EVERGREEN RD, NATICK, MA, 01760",
+        "lat": "42.307526",
+        "long": "-71.362780"
+    },
+    "[NAT 2416] SUBURBAN CARDIOLOGY & INTERNAL MEDICINE PC - 190 NORTH MAIN ST": {
+        "coder": "census",
+        "normalized_address": "190 N MAIN ST, NATICK, MA, 01760",
+        "lat": "42.298626",
+        "long": "-71.359458"
+    },
+    "[NAT 3614] AVALON NATICK APARTMENTS - 5 CHRYSLER RD Apt. #717": {
+        "coder": "census",
+        "normalized_address": "5 CHRYSLER RD, NATICK, MA, 01760",
+        "lat": "42.305171",
+        "long": "-71.381901"
+    },
+    "2 ABBOTT RD": {
+        "coder": "census",
+        "normalized_address": "2 ABBOTT RD, NATICK, MA, 01760",
+        "lat": "42.307828",
+        "long": "-71.333240"
+    },
+    "6 CARTER DR": {
+        "coder": "census",
+        "normalized_address": "6 CARTER DR, NATICK, MA, 01760",
+        "lat": "42.293802",
+        "long": "-71.331501"
+    },
+    "GOOD FEET STORE NATICK - 1292 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "1292 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.298924",
+        "long": "-71.387210"
+    },
+    "[NAT 878] NICK'S PIZZA HOUSE - 179 WEST CENTRAL ST Apt. #6": {
+        "coder": "census",
+        "normalized_address": "179 W CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.282564",
+        "long": "-71.380104"
+    },
+    "57 MORENCY ST": {
+        "coder": "census",
+        "normalized_address": "57 MORENCY ST, NATICK, MA, 01760",
+        "lat": "42.284804",
+        "long": "-71.396367"
+    },
+    "7 SHERIDAN ST ": {
+        "coder": "census",
+        "normalized_address": "7 SHERIDAN ST, NATICK, MA, 01760",
+        "lat": "42.281853",
+        "long": "-71.341466"
+    },
+    "61 PARK AVE": {
+        "coder": "census",
+        "normalized_address": "61 PARK AVE, NATICK, MA, 01760",
+        "lat": "42.297101",
+        "long": "-71.355725"
+    },
+    "10 CRESCENT ST": {
+        "coder": "census",
+        "normalized_address": "10 CRESCENT ST, NATICK, MA, 01760",
+        "lat": "42.288358",
+        "long": "-71.374951"
+    },
+    "[NAT 79] 910 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "910 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299582",
+        "long": "-71.362449"
+    },
+    "257 BACON ST": {
+        "coder": "census",
+        "normalized_address": "257 BACON ST, NATICK, MA, 01760",
+        "lat": "42.297338",
+        "long": "-71.357470"
+    },
+    "257 ELIOT ST ": {
+        "coder": "census",
+        "normalized_address": "257 ELIOT ST, NATICK, MA, 01760",
+        "lat": "42.258867",
+        "long": "-71.333546"
+    },
+    " 115 COTTAGE ST": {
+        "coder": "census",
+        "normalized_address": "115 COTTAGE ST, NATICK, MA, 01760",
+        "lat": "42.268588",
+        "long": "-71.345160"
+    },
+    "[NAT 936] 850 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "850 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.300160",
+        "long": "-71.357222"
+    },
+    "40 OAK ST": {
+        "coder": "census",
+        "normalized_address": "40 OAK ST, NATICK, MA, 01760",
+        "lat": "42.299190",
+        "long": "-71.330233"
+    },
+    "[NAT 2814] TOWN FAIR TIRE - 1276 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "1276 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.298927",
+        "long": "-71.387177"
+    },
+    "5 FISKE LN ": {
+        "coder": "census",
+        "normalized_address": "5 FISKE LN, NATICK, MA, 01760",
+        "lat": "42.277748",
+        "long": "-71.373968"
+    },
+    "17 MADONNA ST": {
+        "coder": "census",
+        "normalized_address": "17 MADONNA ST, NATICK, MA, 01760",
+        "lat": "42.289776",
+        "long": "-71.399132"
+    },
+    "249 SPEEN ST": {
+        "coder": "census",
+        "normalized_address": "249 SPEEN ST, NATICK, MA, 01760",
+        "lat": "42.295736",
+        "long": "-71.376744"
+    },
+    "7 CHRYSLER RD Apt. #109": {
+        "coder": "census",
+        "normalized_address": "7 CHRYSLER RD, NATICK, MA, 01760",
+        "lat": "42.305190",
+        "long": "-71.381834"
+    },
+    "[NAT 4029] 536 WORCESTER ST - 536 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "536 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.301331",
+        "long": "-71.346445"
+    },
+    "[NAT 1398] TOWN HALL - 13 EAST CENTRAL ST": {
+        "coder": "census",
+        "normalized_address": "13 E CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.284080",
+        "long": "-71.345351"
+    },
+    "538 WORCESTER ST ": {
+        "coder": "census",
+        "normalized_address": "538 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.301328",
+        "long": "-71.346473"
+    },
+    "[NAT 2043] STARBUCKS COFFEE - 1346 WORCESTER ST": {
+        "coder": "census",
+        "normalized_address": "1346 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.298915",
+        "long": "-71.387322"
+    },
+    "304 WEST CENTRAL ST Apt. #W": {
+        "coder": "census",
+        "normalized_address": "304 W CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.281054",
+        "long": "-71.397012"
+    },
+    "[NAT 3496] PUTTSHACK - 1245 WORCESTER ST Apt. #1096": {
+        "coder": "census",
+        "normalized_address": "1245 WORCESTER ST, NATICK, MA, 01760",
+        "lat": "42.299500",
+        "long": "-71.377749"
+    },
+    "[NAT 2298] SS FRAMINGHAM REALTY INC - 209 WEST CENTRAL ST Apt. #126": {
+        "coder": "census",
+        "normalized_address": "209 W CENTRAL ST, NATICK, MA, 01760",
+        "lat": "42.282003",
+        "long": "-71.389906"
+    },
+    "10 BEVERLY RD": {
+        "coder": "census",
+        "normalized_address": "10 BEVERLY RD, NATICK, MA, 01760",
+        "lat": "42.306166",
+        "long": "-71.333892"
+    },
+    "25 LAKEVIEW GARDENS Apt. #7": {
+        "coder": "census",
+        "normalized_address": "25 LAKEVIEW AVE, NATICK, MA, 01760",
+        "lat": "42.275004",
+        "long": "-71.369580"
+    },
+    "188 MILL ST": {
+        "coder": "census",
+        "normalized_address": "188 MILL ST, NATICK, MA, 01760",
+        "lat": "42.290873",
+        "long": "-71.387927"
+    },
+    "25 CHURCH ST": {
+        "coder": "census",
+        "normalized_address": "25 CHURCH ST, NATICK, MA, 01760",
+        "lat": "42.282242",
+        "long": "-71.345262"
+    },
+    "PEGAN COVE TRAIL - 25 WASHINGTON AVE ": {
+        "coder": "census",
+        "normalized_address": "25 WASHINGTON AVE, NATICK, MA, 01760",
+        "lat": "42.285654",
+        "long": "-71.353082"
+    },
+    "[NAT 3226] NAVY YARD FIELD (WHITNEY) - 41 WASHINGTON AVE": {
+        "coder": "census",
+        "normalized_address": "41 WASHINGTON AVE, NATICK, MA, 01760",
+        "lat": "42.288223",
+        "long": "-71.354165"
+    },
+    "[NAT 2148] ST PATRICKS CEMETARY - 180 POND ST": {
+        "coder": "census",
+        "normalized_address": "180 POND ST, NATICK, MA, 01760",
+        "lat": "42.278147",
+        "long": "-71.370184"
+    },
+    "7 FLORAL AVE EXT": {
+        "coder": "census",
+        "normalized_address": "7 FLORAL AVE, NATICK, MA, 01760",
+        "lat": "42.279647",
+        "long": "-71.350161"
+    },
+    "8 COOLIDGE AVE": {
+        "coder": "census",
+        "normalized_address": "8 COOLIDGE AVE, NATICK, MA, 01760",
+        "lat": "42.278472",
+        "long": "-71.346679"
+    },
+    "[FRA] FRAMINGHAM UNION - 115 LINCOLN ST": {
+        "coder": "census",
+        "normalized_address": "115 LINCOLN ST, FRAMINGHAM, MA, 01702",
+        "lat": "42.284534",
+        "long": "-71.420120"
     }
 }
