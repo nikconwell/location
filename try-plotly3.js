@@ -48,7 +48,7 @@ function handleCsvData(err, rows) {
     margin: { r: 20, t: 40, b: 20, l: 20, pad: 0 },
     hoverlabel: { align: "left" },
     showlegend: true,  // Enable legend display
-    title: { text: 'Town of Natick Activity' },
+    title: { text: 'Town of Natick Activity, 2024. (Click or double click activity on right to focus/select)' },
     // legend: {
     //   orientation: "h", // Horizontal legend (you can change to 'v' for vertical)
     //   x: 0.5,
